@@ -3,7 +3,7 @@ const CLINIC_PHONE = '9613560797';
 const GENETIC_PHONE = '9613110898';
 const WA_MESSAGE = 'Hi, I am interested in a consultation.';
 const APPOINTMENT_MESSAGE = 'Hi! I am interested in booking an appointment with dr chebl azar';
-const GENETIC_MESSAGE = "I am dr's chebl azar's patient and I am interested in the polygenic risk score test";
+const GENETIC_MESSAGE = "I am dr's Elie Snaifer 's patient and I am interested in the polygenic risk score test";
 
 function openWhatsApp(phone, text){
     const n = String(phone);
