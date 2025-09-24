@@ -88,7 +88,7 @@
         <!-- ===== Breast Health Summary ===== -->
         <section id="breast-health-summary" aria-labelledby="breast-health-summary-title" class="fade-in">
             <h2 id="breast-health-summary-title" class="fade-in fade-in-delay-1">Breast Health Summary</h2>
-            <p class="lead fade-in fade-in-delay-2">The basics you need to know - To be breast aware, know your B.R.A.S.</p>
+            <p class="lead fade-in fade-in-delay-2">The basics you need to know - To be breast aware, know your B<span style="color: #e91e63; font-weight: bold; font-size: 1.2em;">•</span>R<span style="color: #e91e63; font-weight: bold; font-size: 1.2em;">•</span>A<span style="color: #e91e63; font-weight: bold; font-size: 1.2em;">•</span>S.</p>
             
             <section id="awareness-image" aria-labelledby="awareness-image-title" style="margin: 2rem 0;" class="fade-in fade-in-delay-3">
                 <div class="card" style="padding:0; display:flex; justify-content:center; align-items:center;">
@@ -100,56 +100,124 @@
                         style="display:block; width:100%; max-width:520px; height:auto; object-fit:contain; border-radius:12px;" />
                 </div>
             </section>
-            <div class="grid cols-1">
-                <div class="step-card fade-in fade-in-delay-1">
-                    <div class="step-number">B</div>
-                    <div class="step-content">
-                        <h3>Breast aware</h3>
-                        <p>Be breast aware from 20 and know what's normal for you. Check your breasts regularly.</p>
-                        <ul class="step-list">
-                            <li><i class="fa-solid fa-check"></i> Know what is normal for your breasts</li>
-                            <li><i class="fa-solid fa-check"></i> Check your breasts regularly for changes</li>
-                            <li><i class="fa-solid fa-check"></i> Report changes immediately to your doctor</li>
-                        </ul>
+            
+            <!-- Interactive BRAS Section -->
+            <div class="bras-interactive-container fade-in fade-in-delay-4" style="display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; margin: 3rem 0; min-height: 500px;">
+                <!-- Left Column - Circular Buttons -->
+                <div class="bras-buttons-column" style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2rem;">
+                    <div class="bras-button active" data-bras="B" style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, #e91e63, #f06292); color: white; display: flex; align-items: center; justify-content: center; font-size: 3rem; font-weight: 700; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.3); border: 4px solid white;">
+                        B
                     </div>
+                    <div style="color: #e91e63; font-size: 2rem; font-weight: bold;">•</div>
+                    <div class="bras-button" data-bras="R" style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, #e91e63, #f06292); color: white; display: flex; align-items: center; justify-content: center; font-size: 3rem; font-weight: 700; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.3); border: 4px solid white;">
+                        R
+                    </div>
+                    <div style="color: #e91e63; font-size: 2rem; font-weight: bold;">•</div>
+                    <div class="bras-button" data-bras="A" style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, #e91e63, #f06292); color: white; display: flex; align-items: center; justify-content: center; font-size: 3rem; font-weight: 700; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.3); border: 4px solid white;">
+                        A
+                    </div>
+                    <div style="color: #e91e63; font-size: 2rem; font-weight: bold;">•</div>
+                    <div class="bras-button" data-bras="S" style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, #e91e63, #f06292); color: white; display: flex; align-items: center; justify-content: center; font-size: 3rem; font-weight: 700; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.3); border: 4px solid white;">
+                        S
+                    </div>
+                </div>
+                
+                <!-- Right Column - Content Cards -->
+                <div class="bras-cards-container" style="position: relative; min-height: 500px;">
+                    <!-- B Card -->
+                    <div class="bras-card active" data-bras="B" style="position: absolute; top: 0; left: 0; right: 0; background: linear-gradient(135deg, #fff, #f8f9fa); border: 2px solid #e91e63; border-radius: 15px; padding: 2rem; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1); opacity: 1; transform: translateX(0); transition: all 0.5s ease;">
+                        <div class="bras-header" style="background: #e91e63; color: white; padding: 1rem; border-radius: 10px; margin: -2rem -2rem 1.5rem -2rem; font-weight: 700; font-size: 1.5rem; text-align: center;">
+                            B - Breast Aware
                         </div>
-
-                <div class="step-card fade-in fade-in-delay-2">
-                    <div class="step-number">R</div>
-                    <div class="step-content">
-                        <h3>Reduce your risk</h3>
-                        <p>Reduce your risk through healthy lifestyle choices. Know your family history and talk to your doctor about hereditary breast cancer concerns.</p>
-                        <ul class="step-list">
-                            <li><i class="fa-solid fa-check"></i> Maintain a healthy lifestyle</li>
-                            <li><i class="fa-solid fa-check"></i> Know your family history</li>
-                            <li><i class="fa-solid fa-check"></i> Discuss hereditary concerns with your doctor</li>
-                        </ul>
+                        <div class="bras-content">
+                            <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: #333;">Be breast aware from 20 and know what's normal for you. Check your breasts regularly.</p>
+                            <ul class="bras-list" style="list-style: none; padding: 0;">
+                                <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
+                                    <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
+                                    <span style="font-weight: 500;">Know what is normal for your breasts</span>
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
+                                    <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
+                                    <span style="font-weight: 500;">Check your breasts regularly for changes</span>
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
+                                    <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
+                                    <span style="font-weight: 500;">Report changes immediately to your doctor</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-
-                <div class="step-card fade-in fade-in-delay-3">
-                    <div class="step-number">A</div>
-                    <div class="step-content">
-                        <h3>Act promptly</h3>
-                        <p>Act on unusual breast changes, show your doctor promptly.</p>
-                        <ul class="step-list">
-                            <li><i class="fa-solid fa-check"></i> Don't wait - act on any unusual changes</li>
-                            <li><i class="fa-solid fa-check"></i> Show your doctor any concerns immediately</li>
-                            <li><i class="fa-solid fa-check"></i> Early detection saves lives</li>
-                        </ul>
+                    
+                    <!-- R Card -->
+                    <div class="bras-card" data-bras="R" style="position: absolute; top: 0; left: 0; right: 0; background: linear-gradient(135deg, #fff, #f8f9fa); border: 2px solid #e91e63; border-radius: 15px; padding: 2rem; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1); opacity: 0; transform: translateX(50px); transition: all 0.5s ease;">
+                        <div class="bras-header" style="background: #e91e63; color: white; padding: 1rem; border-radius: 10px; margin: -2rem -2rem 1.5rem -2rem; font-weight: 700; font-size: 1.5rem; text-align: center;">
+                            R - Reduce Your Risk
+                        </div>
+                        <div class="bras-content">
+                            <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: #333;">Reduce your risk through healthy lifestyle choices. Know your family history and talk to your doctor about hereditary breast cancer concerns.</p>
+                            <ul class="bras-list" style="list-style: none; padding: 0;">
+                                <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
+                                    <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
+                                    <span style="font-weight: 500;">Maintain a healthy lifestyle</span>
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
+                                    <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
+                                    <span style="font-weight: 500;">Know your family history</span>
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
+                                    <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
+                                    <span style="font-weight: 500;">Discuss hereditary concerns with your doctor</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-
-                <div class="step-card fade-in fade-in-delay-4">
-                    <div class="step-number">S</div>
-                    <div class="step-content">
-                        <h3>Screening mammograms</h3>
-                        <p>Consider having screening mammograms annually from 40.</p>
-                        <ul class="step-list">
-                            <li><i class="fa-solid fa-check"></i> Start annual mammograms at age 40</li>
-                            <li><i class="fa-solid fa-check"></i> Continue regular screening</li>
-                            <li><i class="fa-solid fa-check"></i> Discuss timing with your doctor</li>
-                        </ul>
+                    
+                    <!-- A Card -->
+                    <div class="bras-card" data-bras="A" style="position: absolute; top: 0; left: 0; right: 0; background: linear-gradient(135deg, #fff, #f8f9fa); border: 2px solid #e91e63; border-radius: 15px; padding: 2rem; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1); opacity: 0; transform: translateX(50px); transition: all 0.5s ease;">
+                        <div class="bras-header" style="background: #e91e63; color: white; padding: 1rem; border-radius: 10px; margin: -2rem -2rem 1.5rem -2rem; font-weight: 700; font-size: 1.5rem; text-align: center;">
+                            A - Act Promptly
+                        </div>
+                        <div class="bras-content">
+                            <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: #333;">Act on unusual breast changes, show your doctor promptly.</p>
+                            <ul class="bras-list" style="list-style: none; padding: 0;">
+                                <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
+                                    <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
+                                    <span style="font-weight: 500;">Don't wait - act on any unusual changes</span>
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
+                                    <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
+                                    <span style="font-weight: 500;">Show your doctor any concerns immediately</span>
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
+                                    <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
+                                    <span style="font-weight: 500;">Early detection saves lives</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- S Card -->
+                    <div class="bras-card" data-bras="S" style="position: absolute; top: 0; left: 0; right: 0; background: linear-gradient(135deg, #fff, #f8f9fa); border: 2px solid #e91e63; border-radius: 15px; padding: 2rem; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1); opacity: 0; transform: translateX(50px); transition: all 0.5s ease;">
+                        <div class="bras-header" style="background: #e91e63; color: white; padding: 1rem; border-radius: 10px; margin: -2rem -2rem 1.5rem -2rem; font-weight: 700; font-size: 1.5rem; text-align: center;">
+                            S - Screening Mammograms
+                        </div>
+                        <div class="bras-content">
+                            <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: #333;">Consider having screening mammograms annually from 40.</p>
+                            <ul class="bras-list" style="list-style: none; padding: 0;">
+                                <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
+                                    <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
+                                    <span style="font-weight: 500;">Start annual mammograms at age 40</span>
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
+                                    <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
+                                    <span style="font-weight: 500;">Continue regular screening</span>
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
+                                    <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
+                                    <span style="font-weight: 500;">Discuss timing with your doctor</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -646,6 +714,23 @@
     <script src="/assets/js/animations.js"></script>
     
     <style>
+        /* ===== GLOBAL FONT SETTINGS ===== */
+        * {
+            font-family: 'Quicksand', sans-serif !important;
+            font-weight: 300 !important;
+        }
+        
+        /* Fix for Font Awesome icons */
+        i, .fa, .fas, .far, .fab, .fal, .fad, .fat, [class*="fa-"] {
+            font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands", "Font Awesome 6 Pro" !important;
+            font-weight: 900 !important;
+        }
+        
+        .fab {
+            font-family: "Font Awesome 6 Brands" !important;
+            font-weight: 400 !important;
+        }
+        
         /* ===== SCROLL-TRIGGERED ANIMATIONS ===== */
         
         /* Base animation classes */
@@ -1090,6 +1175,90 @@
             .life-stages-table td {
                 padding: 0.75rem 0.5rem;
             }
+            
+        /* BRAS Button Pulsing Animation */
+        .bras-button.pulse-glow {
+            animation: brasPulseGlow 2s ease-in-out infinite;
+        }
+        
+        @keyframes brasPulseGlow {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 8px 25px rgba(233, 30, 99, 0.3);
+            }
+            50% {
+                transform: scale(1.15);
+                box-shadow: 0 15px 40px rgba(233, 30, 99, 0.6), 0 0 30px rgba(233, 30, 99, 0.4);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 8px 25px rgba(233, 30, 99, 0.3);
+            }
+        }
+        
+        /* BRAS Interactive Responsive Styles */
+        .bras-interactive-container {
+            grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+            margin: 2rem 0 !important;
+        }
+            
+            .bras-buttons-column {
+                flex-direction: row !important;
+                justify-content: center !important;
+                flex-wrap: wrap !important;
+                gap: 0.5rem !important;
+            }
+            
+            .bras-buttons-column > div:not(.bras-button) {
+                font-size: 1.5rem !important;
+            }
+            
+            .bras-button {
+                width: 80px !important;
+                height: 80px !important;
+                font-size: 2rem !important;
+            }
+            
+            .bras-cards-container {
+                min-height: 400px !important;
+            }
+            
+            .bras-card {
+                padding: 1.5rem !important;
+            }
+            
+            .bras-header {
+                font-size: 1.2rem !important;
+                padding: 0.75rem !important;
+                margin: -1.5rem -1.5rem 1rem -1.5rem !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .bras-buttons-column {
+                gap: 0.25rem !important;
+            }
+            
+            .bras-buttons-column > div:not(.bras-button) {
+                font-size: 1.2rem !important;
+            }
+            
+            .bras-button {
+                width: 60px !important;
+                height: 60px !important;
+                font-size: 1.5rem !important;
+            }
+            
+            .bras-card {
+                padding: 1rem !important;
+            }
+            
+            .bras-header {
+                font-size: 1rem !important;
+                padding: 0.5rem !important;
+                margin: -1rem -1rem 1rem -1rem !important;
+            }
         }
     </style>
     
@@ -1352,6 +1521,143 @@
         
         // Start checklist animation when page loads
         animateChecklist();
+        
+        // ===== BRAS INTERACTIVE FUNCTIONALITY =====
+        const brasButtons = document.querySelectorAll('.bras-button');
+        const brasCards = document.querySelectorAll('.bras-card');
+        let currentBrasIndex = 0;
+        let brasAutoSwitchInterval;
+        let isUserInteracting = false;
+        let brasPulseInterval;
+        let currentPulseIndex = 0;
+        
+        // Define BRAS order
+        const brasOrder = ['B', 'R', 'A', 'S'];
+        
+        // Function to show specific BRAS card
+        function showBrasCard(targetBras) {
+            const targetIndex = brasOrder.indexOf(targetBras);
+            
+            // Remove active class from all buttons
+            brasButtons.forEach(btn => {
+                btn.classList.remove('active');
+                btn.style.transform = 'scale(1)';
+                btn.style.background = 'linear-gradient(135deg, #e91e63, #f06292)';
+            });
+            
+            // Add active class to target button
+            const targetButton = document.querySelector(`.bras-button[data-bras="${targetBras}"]`);
+            if (targetButton) {
+                targetButton.classList.add('active');
+                targetButton.style.transform = 'scale(1.1)';
+                targetButton.style.background = 'linear-gradient(135deg, #f06292, #e91e63)';
+            }
+            
+            // Hide all cards
+            brasCards.forEach(card => {
+                card.classList.remove('active');
+                card.style.opacity = '0';
+                card.style.transform = 'translateX(50px)';
+            });
+            
+            // Show target card
+            const targetCard = document.querySelector(`.bras-card[data-bras="${targetBras}"]`);
+            if (targetCard) {
+                targetCard.classList.add('active');
+                targetCard.style.opacity = '1';
+                targetCard.style.transform = 'translateX(0)';
+            }
+            
+            currentBrasIndex = targetIndex;
+        }
+        
+        // Function for synchronized switching (cards and buttons together)
+        function synchronizedBrasSwitch() {
+            if (!isUserInteracting) {
+                currentBrasIndex = (currentBrasIndex + 1) % brasOrder.length;
+                const targetBras = brasOrder[currentBrasIndex];
+                
+                // Show the card
+                showBrasCard(targetBras);
+                
+                // Remove pulse-glow from all buttons
+                brasButtons.forEach(btn => {
+                    btn.classList.remove('pulse-glow');
+                });
+                
+                // Add pulse-glow to current button
+                const currentButton = document.querySelector(`.bras-button[data-bras="${targetBras}"]`);
+                if (currentButton) {
+                    currentButton.classList.add('pulse-glow');
+                }
+            }
+        }
+        
+        // Add click event listeners to BRAS buttons
+        brasButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const targetBras = this.getAttribute('data-bras');
+                isUserInteracting = true;
+                showBrasCard(targetBras);
+                
+                // Stop all animations when user clicks
+                clearInterval(brasAutoSwitchInterval);
+                brasButtons.forEach(btn => {
+                    btn.classList.remove('pulse-glow');
+                });
+            });
+            
+            // Add hover effects
+            button.addEventListener('mouseenter', function() {
+                if (!this.classList.contains('active')) {
+                    this.style.transform = 'scale(1.05)';
+                    this.style.background = 'linear-gradient(135deg, #f06292, #e91e63)';
+                }
+            });
+            
+            button.addEventListener('mouseleave', function() {
+                if (!this.classList.contains('active')) {
+                    this.style.transform = 'scale(1)';
+                    this.style.background = 'linear-gradient(135deg, #e91e63, #f06292)';
+                }
+            });
+        });
+        
+        // Function to start BRAS animation when section comes into view
+        function startBrasAnimation() {
+            if (brasAutoSwitchInterval) return; // Already started
+            
+            // Start with B button pulsing
+            brasButtons.forEach(btn => {
+                btn.classList.remove('pulse-glow');
+            });
+            const bButton = document.querySelector('.bras-button[data-bras="B"]');
+            if (bButton) {
+                bButton.classList.add('pulse-glow');
+            }
+            
+            // Start synchronized switching after 4 seconds
+            setTimeout(() => {
+                brasAutoSwitchInterval = setInterval(synchronizedBrasSwitch, 4000); // 4 seconds
+            }, 4000); // Wait 4 seconds before starting the cycle
+        }
+        
+        // Intersection Observer for BRAS section
+        const brasSection = document.getElementById('breast-health-summary');
+        if (brasSection) {
+            const brasObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !brasAutoSwitchInterval) {
+                        startBrasAnimation();
+                    }
+                });
+            }, {
+                threshold: 0.3, // Trigger when 30% of section is visible
+                rootMargin: '0px 0px -100px 0px'
+            });
+            
+            brasObserver.observe(brasSection);
+        }
     });
     </script>
 </body>
