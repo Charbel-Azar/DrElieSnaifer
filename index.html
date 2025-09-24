@@ -89,11 +89,11 @@
 
     <main class="container" role="main">
         <!-- ===== Breast Health Summary ===== -->
-        <section id="breast-health-summary" aria-labelledby="breast-health-summary-title">
-            <h2 id="breast-health-summary-title">Breast Health Summary</h2>
-            <p class="lead">The basics you need to know - To be breast aware, know your B.R.A.S.</p>
+        <section id="breast-health-summary" aria-labelledby="breast-health-summary-title" class="fade-in">
+            <h2 id="breast-health-summary-title" class="fade-in fade-in-delay-1">Breast Health Summary</h2>
+            <p class="lead fade-in fade-in-delay-2">The basics you need to know - To be breast aware, know your B.R.A.S.</p>
             
-            <section id="awareness-image" aria-labelledby="awareness-image-title" style="margin: 2rem 0;">
+            <section id="awareness-image" aria-labelledby="awareness-image-title" style="margin: 2rem 0;" class="fade-in fade-in-delay-3">
                 <div class="card" style="padding:0; display:flex; justify-content:center; align-items:center;">
                     <!-- Vertical image: constrained width, no cropping -->
                     <img 
@@ -104,7 +104,7 @@
                 </div>
             </section>
             <div class="grid cols-1">
-                <div class="step-card">
+                <div class="step-card fade-in fade-in-delay-1">
                     <div class="step-number">B</div>
                     <div class="step-content">
                         <h3>Breast aware</h3>
@@ -117,7 +117,7 @@
                     </div>
                         </div>
 
-                <div class="step-card">
+                <div class="step-card fade-in fade-in-delay-2">
                     <div class="step-number">R</div>
                     <div class="step-content">
                         <h3>Reduce your risk</h3>
@@ -130,7 +130,7 @@
                     </div>
                 </div>
 
-                <div class="step-card">
+                <div class="step-card fade-in fade-in-delay-3">
                     <div class="step-number">A</div>
                     <div class="step-content">
                         <h3>Act promptly</h3>
@@ -143,7 +143,7 @@
                     </div>
                 </div>
 
-                <div class="step-card">
+                <div class="step-card fade-in fade-in-delay-4">
                     <div class="step-number">S</div>
                     <div class="step-content">
                         <h3>Screening mammograms</h3>
@@ -157,7 +157,7 @@
                 </div>
             </div>
             
-            <div class="step-highlight" style="margin-top: 2rem; padding: 1.5rem; background: #f8f9fa; border-left: 4px solid #e91e63; border-radius: 8px;">
+            <div class="step-highlight fade-in fade-in-delay-4" style="margin-top: 2rem; padding: 1.5rem; background: #f8f9fa; border-left: 4px solid #e91e63; border-radius: 8px;">
                 <h4 style="margin-top: 0; color: #e91e63;">Remember...</h4>
                 <ul style="margin-bottom: 0;">
                     <li>Most lumps and bumps are not cancerous, but show your doctor if you notice any breast changes.</li>
@@ -199,7 +199,7 @@
                     
                     <!-- Age Group Buttons -->
                     <div class="age-buttons" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
-                        <button class="age-btn" data-age="20-39" style="background: linear-gradient(135deg, #e91e63, #f06292); color: white; border: none; padding: 1.5rem 1rem; border-radius: 15px; font-weight: 700; font-size: 1.1rem; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.3);">
+                        <button class="age-btn active" data-age="20-39" style="background: white; color: #e91e63; border: 3px solid #e91e63; padding: 1.5rem 1rem; border-radius: 15px; font-weight: 700; font-size: 1.1rem; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.2);">
                             <i class="fa-solid fa-user" style="margin-right: 0.5rem;"></i>
                             20–39 Years
                         </button>
@@ -421,30 +421,39 @@
         <section id="risk-factors" aria-labelledby="risk-factors-title" class="risk-factors-section">
             <h2 id="risk-factors-title">Risks you can't change</h2>
             <p class="lead">We don't know exactly what causes breast cancer, but we do know that certain risk factors can increase your chance of getting it</p>
-            
+            <section id="awareness-image" aria-labelledby="awareness-image-title" style="margin: 2rem 0;">
+                <div class="card" style="padding:0; display:flex; justify-content:center; align-items:center;">
+                    <!-- Vertical image: constrained width, no cropping -->
+                    <img 
+                        src="/assets/images/breastcancer/breastcancer5.jpg" 
+                        alt="Breast cancer awareness"
+                        loading="lazy"
+                        style="display:block; width:100%; max-width:520px; height:auto; object-fit:contain; border-radius:12px;" />
+                </div>
+            </section>
             <div class="risk-factors-grid">
-                <div class="risk-factor">
+                <div class="risk-factor" style="background: linear-gradient(135deg, #e91e63, #f06292); color: white; border: none; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.3);">
                     <div class="risk-icon">
-                        <i class="fa-solid fa-venus" style="font-size: 2.5rem; color: #e91e63;"></i>
+                        <i class="fa-solid fa-venus" style="font-size: 2.5rem; color: white;"></i>
                     </div>
-                    <h3>Being a woman</h3>
-                    <p>This is the highest risk factor for developing breast cancer.</p>
+                    <h3 style="color: white;">Being a woman</h3>
+                    <p style="color: rgba(255, 255, 255, 0.9);">This is the highest risk factor for developing breast cancer.</p>
                 </div>
                 
-                <div class="risk-factor">
+                <div class="risk-factor" style="background: linear-gradient(135deg, #e91e63, #f06292); color: white; border: none; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.3);">
                     <div class="risk-icon">
-                        <i class="fa-solid fa-clock" style="font-size: 2.5rem; color: #e91e63;"></i>
+                        <i class="fa-solid fa-clock" style="font-size: 2.5rem; color: white;"></i>
                     </div>
-                    <h3>Getting older</h3>
-                    <p>Age is the second most important risk factor.</p>
+                    <h3 style="color: white;">Getting older</h3>
+                    <p style="color: rgba(255, 255, 255, 0.9);">Age is the second most important risk factor.</p>
                 </div>
                 
-                <div class="risk-factor">
+                <div class="risk-factor" style="background: linear-gradient(135deg, #e91e63, #f06292); color: white; border: none; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.3);">
                     <div class="risk-icon">
-                        <i class="fa-solid fa-family" style="font-size: 2.5rem; color: #e91e63;"></i>
+                        <i class="fa-solid fa-family" style="font-size: 2.5rem; color: white;"></i>
                     </div>
-                    <h3>Family history</h3>
-                    <p>Although most people with breast cancer have no family history, you may have a higher risk of developing breast cancer if your mother, sister or daughter has had breast and/or ovarian cancer.</p>
+                    <h3 style="color: white;">Family history</h3>
+                    <p style="color: rgba(255, 255, 255, 0.9);">Although most people with breast cancer have no family history, you may have a higher risk of developing breast cancer if your mother, sister or daughter has had breast and/or ovarian cancer.</p>
                 </div>
             </div>
             
@@ -500,7 +509,7 @@
                 <div class="row" style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
                     <!-- WhatsApp Card -->
                     <div class="contact-card" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: 20px; padding: 2rem; box-shadow: 0 20px 40px rgba(255, 255, 255, 0.3), 0 10px 30px rgba(0,0,0,0.1); flex: 1; min-width: 300px; max-width: 350px; transition: transform 0.3s ease, box-shadow 0.3s ease; border: 1px solid rgba(255, 255, 255, 0.4);">
-                        <a href="https://wa.me/96179121941" target="_blank" rel="noopener" style="text-decoration: none; color: inherit; display: block;">
+                        <a href="https://wa.me/9613560797" target="_blank" rel="noopener" style="text-decoration: none; color: inherit; display: block;">
                             <div class="card-header" style="text-align: center; margin-bottom: 1.5rem;">
                                 <div class="icon-wrapper" style="width: 80px; height: 80px; background: linear-gradient(135deg, #25D366, #128C7E); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);">
                                     <i class="fa-brands fa-whatsapp" style="font-size: 2rem; color: white;"></i>
@@ -638,6 +647,115 @@
     <script src="/assets/js/animations.js"></script>
     
     <style>
+        /* ===== SCROLL-TRIGGERED ANIMATIONS ===== */
+        
+        /* Base animation classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .fade-in.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .fade-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .fade-in-left.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .fade-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .fade-in-right.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .scale-in.animate {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        .slide-up {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .slide-up.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Staggered animations for multiple elements */
+        .fade-in-delay-1 {
+            transition-delay: 0.1s;
+        }
+        
+        .fade-in-delay-2 {
+            transition-delay: 0.2s;
+        }
+        
+        .fade-in-delay-3 {
+            transition-delay: 0.3s;
+        }
+        
+        .fade-in-delay-4 {
+            transition-delay: 0.4s;
+        }
+        
+        /* Enhanced hover effects */
+        .animate-on-scroll:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+        
+        /* Card hover animations */
+        .step-card:hover,
+        .checking-method:hover,
+        .risk-factor:hover,
+        .contact-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        /* Image animations */
+        .card img {
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Button animations */
+        .btn, .age-btn, .new-hero-btn {
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .btn:hover, .age-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
         /* Hero Section Animations */
         @keyframes slideInLeft {
             from {
@@ -842,9 +960,13 @@
         .risk-factor {
             text-align: center;
             padding: 1.5rem;
-            background: #f8f9fa;
             border-radius: 12px;
-            border: 1px solid #e9ecef;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .risk-factor:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(233, 30, 99, 0.4) !important;
         }
         
         .risk-icon {
@@ -852,7 +974,6 @@
         }
         
         .risk-factor h3 {
-            color: #e91e63;
             margin-bottom: 1rem;
         }
         
@@ -1018,7 +1139,7 @@
                     // Encode the full message for URL
                     const encodedMessage = encodeURIComponent(fullMessage);
                     // Create WhatsApp URL with the pre-filled message
-                    const whatsappUrl = `https://wa.me/96179121941?text=${encodedMessage}`;
+                    const whatsappUrl = `https://wa.me/9613560797?text=${encodedMessage}`;
                     // Open WhatsApp
                     window.open(whatsappUrl, '_blank');
                     // Clear the textarea
@@ -1033,18 +1154,32 @@
         const ageButtons = document.querySelectorAll('.age-btn');
         const ageCards = document.querySelectorAll('.age-card');
         
+        // Show the first card by default (20-39 years)
+        const firstCard = document.querySelector('.age-card[data-age="20-39"]');
+        if (firstCard) {
+            firstCard.style.display = 'block';
+            firstCard.style.opacity = '1';
+            firstCard.style.transform = 'translateY(0)';
+        }
+        
         ageButtons.forEach(button => {
             button.addEventListener('click', function() {
                 const targetAge = this.getAttribute('data-age');
                 
-                // Remove active class from all buttons
+                // Remove active class from all buttons and reset to default styling
                 ageButtons.forEach(btn => {
+                    btn.classList.remove('active');
                     btn.style.background = 'linear-gradient(135deg, #e91e63, #f06292)';
+                    btn.style.color = 'white';
+                    btn.style.border = 'none';
                     btn.style.transform = 'scale(1)';
                 });
                 
-                // Add active class to clicked button
-                this.style.background = 'linear-gradient(135deg, #d81b60, #e91e63)';
+                // Add active class to clicked button with white background and pink border
+                this.classList.add('active');
+                this.style.background = 'white';
+                this.style.color = '#e91e63';
+                this.style.border = '3px solid #e91e63';
                 this.style.transform = 'scale(1.05)';
                 
                 // Hide all cards first

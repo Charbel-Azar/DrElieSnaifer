@@ -1,5 +1,5 @@
 
-const CLINIC_PHONE = '96179121941';
+const CLINIC_PHONE = '9613560797';
 const GENETIC_PHONE = '9613110898';
 const WA_MESSAGE = 'Hi, I am interested in a consultation.';
 const APPOINTMENT_MESSAGE = 'Hi! I am interested in booking an appointment with dr chebl azar';
