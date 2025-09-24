@@ -123,9 +123,9 @@
                 </div>
                 
                 <!-- Right Column - Content Cards -->
-                <div class="bras-cards-container" style="position: relative; min-height: 500px;">
+                <div class="bras-cards-container" style="position: relative; min-height: 500px; overflow: hidden;">
                     <!-- B Card -->
-                    <div class="bras-card active" data-bras="B" style="position: absolute; top: 0; left: 0; right: 0; background: linear-gradient(135deg, #fff, #f8f9fa); border: 2px solid #e91e63; border-radius: 15px; padding: 2rem; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1); opacity: 1; transform: translateX(0); transition: all 0.5s ease;">
+                    <div class="bras-card active" data-bras="B" style="position: absolute; top: 0; left: 0; right: 0; background: linear-gradient(135deg, #fff, #f8f9fa); border: 2px solid #e91e63; border-radius: 15px; padding: 2rem; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1); opacity: 1; transform: translateX(0); transition: all 0.5s ease; width: 100%; box-sizing: border-box;">
                         <div class="bras-header" style="background: #e91e63; color: white; padding: 1rem; border-radius: 10px; margin: -2rem -2rem 1.5rem -2rem; font-weight: 700; font-size: 1.5rem; text-align: center;">
                             B - Breast Aware
                         </div>
@@ -149,7 +149,7 @@
                     </div>
                     
                     <!-- R Card -->
-                    <div class="bras-card" data-bras="R" style="position: absolute; top: 0; left: 0; right: 0; background: linear-gradient(135deg, #fff, #f8f9fa); border: 2px solid #e91e63; border-radius: 15px; padding: 2rem; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1); opacity: 0; transform: translateX(50px); transition: all 0.5s ease;">
+                    <div class="bras-card" data-bras="R" style="position: absolute; top: 0; left: 0; right: 0; background: linear-gradient(135deg, #fff, #f8f9fa); border: 2px solid #e91e63; border-radius: 15px; padding: 2rem; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1); opacity: 0; transform: translateX(50px); transition: all 0.5s ease; width: 100%; box-sizing: border-box;">
                         <div class="bras-header" style="background: #e91e63; color: white; padding: 1rem; border-radius: 10px; margin: -2rem -2rem 1.5rem -2rem; font-weight: 700; font-size: 1.5rem; text-align: center;">
                             R - Reduce Your Risk
                         </div>
@@ -173,7 +173,7 @@
                     </div>
                     
                     <!-- A Card -->
-                    <div class="bras-card" data-bras="A" style="position: absolute; top: 0; left: 0; right: 0; background: linear-gradient(135deg, #fff, #f8f9fa); border: 2px solid #e91e63; border-radius: 15px; padding: 2rem; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1); opacity: 0; transform: translateX(50px); transition: all 0.5s ease;">
+                    <div class="bras-card" data-bras="A" style="position: absolute; top: 0; left: 0; right: 0; background: linear-gradient(135deg, #fff, #f8f9fa); border: 2px solid #e91e63; border-radius: 15px; padding: 2rem; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1); opacity: 0; transform: translateX(50px); transition: all 0.5s ease; width: 100%; box-sizing: border-box;">
                         <div class="bras-header" style="background: #e91e63; color: white; padding: 1rem; border-radius: 10px; margin: -2rem -2rem 1.5rem -2rem; font-weight: 700; font-size: 1.5rem; text-align: center;">
                             A - Act Promptly
                         </div>
@@ -197,7 +197,7 @@
                     </div>
                     
                     <!-- S Card -->
-                    <div class="bras-card" data-bras="S" style="position: absolute; top: 0; left: 0; right: 0; background: linear-gradient(135deg, #fff, #f8f9fa); border: 2px solid #e91e63; border-radius: 15px; padding: 2rem; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1); opacity: 0; transform: translateX(50px); transition: all 0.5s ease;">
+                    <div class="bras-card" data-bras="S" style="position: absolute; top: 0; left: 0; right: 0; background: linear-gradient(135deg, #fff, #f8f9fa); border: 2px solid #e91e63; border-radius: 15px; padding: 2rem; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1); opacity: 0; transform: translateX(50px); transition: all 0.5s ease; width: 100%; box-sizing: border-box;">
                         <div class="bras-header" style="background: #e91e63; color: white; padding: 1rem; border-radius: 10px; margin: -2rem -2rem 1.5rem -2rem; font-weight: 700; font-size: 1.5rem; text-align: center;">
                             S - Screening Mammograms
                         </div>
@@ -1221,11 +1221,15 @@
             }
             
             .bras-cards-container {
-                min-height: 400px !important;
+                min-height: 500px !important;
+                overflow: hidden !important;
             }
             
             .bras-card {
-                padding: 1.5rem !important;
+                padding: 2rem !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+                max-width: 100% !important;
             }
             
             .bras-header {
@@ -1251,13 +1255,27 @@
             }
             
             .bras-card {
-                padding: 1rem !important;
+                padding: 1.5rem !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+                max-width: 100% !important;
+                overflow: hidden !important;
             }
             
             .bras-header {
                 font-size: 1rem !important;
                 padding: 0.5rem !important;
                 margin: -1rem -1rem 1rem -1rem !important;
+                word-wrap: break-word !important;
+            }
+            
+            .bras-content {
+                word-wrap: break-word !important;
+                overflow-wrap: break-word !important;
+            }
+            
+            .bras-cards-container {
+                min-height: 450px !important;
             }
         }
     </style>
