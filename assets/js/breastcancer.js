@@ -1,6 +1,6 @@
 
-const CLINIC_PHONE = '9613560797';
-const GENETIC_PHONE = '9613110898';
+const CLINIC_PHONE = '81495858';
+const GENETIC_PHONE = '03110898';
 const WA_MESSAGE = 'Hi, I am interested in a consultation.';
 const APPOINTMENT_MESSAGE = 'Hi! I am interested in booking an appointment with dr Elie Snaifer';
 const GENETIC_MESSAGE = "I am dr's Elie Snaifer 's patient and I am interested in the polygenic risk score test";
@@ -109,21 +109,21 @@ const PARTNERS = [
     {
         name: 'CMC Women Clinic (Clemenceau Medical Center)',
         city: 'Beirut',
-        wa: '96176002212',
+        wa: '81495858',
         site: 'https://www.cmc.com.lb/',
         img: 'https://upload.wikimedia.org/wikipedia/commons/2/25/Clemenceau_Medical_Center_bilingual_logo.jpg'
     },
     {
         name: 'Keserwan Medical Center (KMC)',
         city: 'Ghazir',
-        wa: '96176046555',
+        wa: '81495858',
         site: 'https://www.kmc.com.lb/',
         img: 'https://www.kmc.com.lb/assets/logo.png'
     },
     {
         name: 'CEMA — Centre d\'Exploration Médicale Avancée',
         city: 'Beirut',
-        wa: '96178837501',
+        wa: '81495858',
         site: 'https://cema.com.lb/',
         img: 'https://cema.com.lb/wp-content/uploads/2018/08/3d-mammogram-1.jpg'
     }

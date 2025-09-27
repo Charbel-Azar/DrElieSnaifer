@@ -16,10 +16,27 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="nav" style="justify-content: center;">
+    <nav class="nav" style="justify-content: space-between; align-items: center;">
       <a href="#" class="brand-link" aria-label="Dr. Elie Snaifer home">
         <img src="/assets/images/breastcancer/cheblazar breast clinic.png" alt="Dr. Elie Snaifer Clinic" class="brand-icon" />
       </a>
+      
+      <!-- Language Selector -->
+      <div class="language-selector">
+        <div class="selected-text" id="languageBtn">
+          <i class="fa-solid fa-globe"></i>
+        </div>
+        <div class="dropdown" id="languageDropdown">
+          <div class="dropdown-option" data-lang="en">
+            <span class="lang-code">EN</span>
+            <span class="lang-name">English</span>
+          </div>
+          <div class="dropdown-option" data-lang="ar">
+            <span class="lang-code">AR</span>
+            <span class="lang-name">العربية</span>
+          </div>
+        </div>
+      </div>
     </nav>
 
 
@@ -31,19 +48,19 @@
                 <div class="new-hero-text" style="animation: slideInLeft 1s ease-out;">
                     <!-- Glass Badge -->
                     <div class="hero-badge" style="display: inline-flex; align-items: center; gap: 0.75rem; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); padding: 0.75rem 1.5rem; border-radius: 50px; margin-bottom: 2rem; border: 1px solid rgba(255, 255, 255, 0.3); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);">
-                        <span style="font-weight: 600; color: white; font-size: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">Snaifer Fertility Center</span>
+                        <span style="font-weight: 600; color: white; font-size: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.1);" data-translate="clinic_name">Snaifer Clinic</span>
                     </div>
                     
                     <!-- Main Title -->
                     <h1 class="new-hero-title" style="font-size: 3.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 1.5rem; color: white; text-shadow: 0 4px 8px rgba(0,0,0,0.2);">
                        
-                        <span style="color: #fff; position: relative; background: linear-gradient(45deg, #fff, #f8f9fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                        <span style="color: #fff; position: relative; background: linear-gradient(45deg, #fff, #f8f9fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;" data-translate="hero_title">
                             What you need to know about breast health
                         </span>
                     </h1>
                     
                     <!-- Subtitle -->
-                    <p style="font-size: 1.25rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 2.5rem; line-height: 1.6; font-weight: 400; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <p style="font-size: 1.25rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 2.5rem; line-height: 1.6; font-weight: 400; text-shadow: 0 2px 4px rgba(0,0,0,0.1);" data-translate="hero_subtitle">
                         A comprehensive guide to breast awareness, early detection, and preventive care
                     </p>
                     
@@ -54,7 +71,7 @@
                             <!-- Glass shine effect -->
                             <div style="position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent); transition: left 0.6s ease;"></div>
                             <i class="fa-solid fa-comment-medical" style="font-size: 1.3rem; z-index: 1; position: relative;"></i>
-                            <span style="z-index: 1; position: relative;">Ask Dr. Elie Snaifer</span>
+                            <span style="z-index: 1; position: relative;" data-translate="ask_doctor">Ask Dr. Elie Snaifer</span>
                         </a>
                     </div>
                 </div>
@@ -75,7 +92,7 @@
                         
                         <!-- Floating Glass Elements -->
                         <div style="position: absolute; top: 10px; right: -15px; background: rgba(255, 255, 255, 0.25); backdrop-filter: blur(15px); color: white; padding: 1rem 1.5rem; border-radius: 25px; font-size: 0.9rem; font-weight: 600; box-shadow: 0 12px 40px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.3); border: 2px solid rgba(255, 255, 255, 0.3); z-index: 4;">
-                            <i class="fa-solid fa-heart" style="margin-right: 0.5rem;"></i>Breast Health
+                            <i class="fa-solid fa-heart" style="margin-right: 0.5rem;"></i><span data-translate="breast_health_badge">صحة الثدي</span>
                         </div>
                     </div>
                 </div>
@@ -87,8 +104,8 @@
     <main class="container" role="main">
         <!-- ===== Breast Health Summary ===== -->
         <section id="breast-health-summary" aria-labelledby="breast-health-summary-title" class="fade-in">
-            <h2 id="breast-health-summary-title" class="fade-in fade-in-delay-1">Breast Health Summary</h2>
-            <p class="lead fade-in fade-in-delay-2">The basics you need to know - To be breast aware, know your B<span style="color: #e91e63; font-weight: bold; font-size: 1.2em;">•</span>R<span style="color: #e91e63; font-weight: bold; font-size: 1.2em;">•</span>A<span style="color: #e91e63; font-weight: bold; font-size: 1.2em;">•</span>S.</p>
+            <h2 id="breast-health-summary-title" class="fade-in fade-in-delay-1" data-translate="breast_health_summary">Breast Health Summary</h2>
+            <p class="lead fade-in fade-in-delay-2" data-translate="breast_health_basics">The basics you need to know - To be breast aware, know your B<span style="color: #e91e63; font-weight: bold; font-size: 1.2em;">•</span>R<span style="color: #e91e63; font-weight: bold; font-size: 1.2em;">•</span>A<span style="color: #e91e63; font-weight: bold; font-size: 1.2em;">•</span>S.</p>
             
             <section id="awareness-image" aria-labelledby="awareness-image-title" style="margin: 2rem 0;" class="fade-in fade-in-delay-3">
                 <div class="card" style="padding:0; display:flex; justify-content:center; align-items:center;">
@@ -126,23 +143,23 @@
                 <div class="bras-cards-container" style="position: relative; min-height: 550px; overflow: hidden;">
                     <!-- B Card -->
                     <div class="bras-card active" data-bras="B" style="position: absolute; top: 0; left: 0; right: 0; background: linear-gradient(135deg, #fff, #f8f9fa); border: 2px solid #e91e63; border-radius: 15px; padding: 2rem; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1); opacity: 1; transform: translateX(0); transition: all 0.5s ease; width: 100%; box-sizing: border-box;">
-                        <div class="bras-header" style="background: #e91e63; color: white; padding: 1rem; border-radius: 10px; margin: -2rem -2rem 1.5rem -2rem; font-weight: 700; font-size: 1.5rem; text-align: center;">
+                        <div class="bras-header" style="background: #e91e63; color: white; padding: 1rem; border-radius: 10px; margin: -2rem -2rem 1.5rem -2rem; font-weight: 700; font-size: 1.5rem; text-align: center;" data-translate="bras_b_title">
                             B - Breast Aware
                         </div>
                         <div class="bras-content">
-                            <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: #333;">Be breast aware from 20 and know what's normal for you.</p>
+                            <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: #333;" data-translate="bras_b_description">Be breast aware from 20 and know what's normal for you.</p>
                             <ul class="bras-list" style="list-style: none; padding: 0;">
                                 <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Know what is normal for your breasts</span>
+                                    <span style="font-weight: 500;" data-translate="bras_b_item1">Know what is normal for your breasts</span>
                                 </li>
                                 <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Check your breasts regularly for changes</span>
+                                    <span style="font-weight: 500;" data-translate="bras_b_item2">Check your breasts regularly for changes</span>
                                 </li>
                                 <li style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Report changes immediately to your doctor</span>
+                                    <span style="font-weight: 500;" data-translate="bras_b_item3">Report changes immediately to your doctor</span>
                                 </li>
                             </ul>
                         </div>
@@ -150,23 +167,23 @@
                     
                     <!-- R Card -->
                     <div class="bras-card" data-bras="R" style="position: absolute; top: 0; left: 0; right: 0; background: linear-gradient(135deg, #fff, #f8f9fa); border: 2px solid #e91e63; border-radius: 15px; padding: 2rem; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1); opacity: 0; transform: translateX(50px); transition: all 0.5s ease; width: 100%; box-sizing: border-box;">
-                        <div class="bras-header" style="background: #e91e63; color: white; padding: 1rem; border-radius: 10px; margin: -2rem -2rem 1.5rem -2rem; font-weight: 700; font-size: 1.5rem; text-align: center;">
+                        <div class="bras-header" style="background: #e91e63; color: white; padding: 1rem; border-radius: 10px; margin: -2rem -2rem 1.5rem -2rem; font-weight: 700; font-size: 1.5rem; text-align: center;" data-translate="bras_r_title">
                             R - Reduce Your Risk
                         </div>
                         <div class="bras-content">
-                            <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: #333;">Reduce your risk through healthy lifestyle choices. Know your family history and talk to your doctor about hereditary breast cancer concerns.</p>
+                            <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: #333;" data-translate="bras_r_description">Reduce your risk through healthy lifestyle choices. Know your family history and talk to your doctor about hereditary breast cancer concerns.</p>
                             <ul class="bras-list" style="list-style: none; padding: 0;">
                                 <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Maintain a healthy lifestyle</span>
+                                    <span style="font-weight: 500;" data-translate="bras_r_item1">Maintain a healthy lifestyle</span>
                                 </li>
                                 <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Know your family history</span>
+                                    <span style="font-weight: 500;" data-translate="bras_r_item2">Know your family history</span>
                                 </li>
                                 <li style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Discuss hereditary concerns with your doctor</span>
+                                    <span style="font-weight: 500;" data-translate="bras_r_item3">Discuss hereditary concerns with your doctor</span>
                                 </li>
                             </ul>
                         </div>
@@ -174,23 +191,23 @@
                     
                     <!-- A Card -->
                     <div class="bras-card" data-bras="A" style="position: absolute; top: 0; left: 0; right: 0; background: linear-gradient(135deg, #fff, #f8f9fa); border: 2px solid #e91e63; border-radius: 15px; padding: 2rem; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1); opacity: 0; transform: translateX(50px); transition: all 0.5s ease; width: 100%; box-sizing: border-box;">
-                        <div class="bras-header" style="background: #e91e63; color: white; padding: 1rem; border-radius: 10px; margin: -2rem -2rem 1.5rem -2rem; font-weight: 700; font-size: 1.5rem; text-align: center;">
+                        <div class="bras-header" style="background: #e91e63; color: white; padding: 1rem; border-radius: 10px; margin: -2rem -2rem 1.5rem -2rem; font-weight: 700; font-size: 1.5rem; text-align: center;" data-translate="bras_a_title">
                             A - Act Promptly
                         </div>
                         <div class="bras-content">
-                            <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: #333;">Act on unusual breast changes, show your doctor promptly.</p>
+                            <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: #333;" data-translate="bras_a_description">Act on unusual breast changes, show your doctor promptly.</p>
                             <ul class="bras-list" style="list-style: none; padding: 0;">
                                 <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Don't wait - act on any unusual changes</span>
+                                    <span style="font-weight: 500;" data-translate="bras_a_item1">Don't wait - act on any unusual changes</span>
                                 </li>
                                 <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Show your doctor any concerns immediately</span>
+                                    <span style="font-weight: 500;" data-translate="bras_a_item2">Show your doctor any concerns immediately</span>
                                 </li>
                                 <li style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Early detection saves lives</span>
+                                    <span style="font-weight: 500;" data-translate="bras_a_item3">Early detection saves lives</span>
                                 </li>
                             </ul>
                         </div>
@@ -198,23 +215,23 @@
                     
                     <!-- S Card -->
                     <div class="bras-card" data-bras="S" style="position: absolute; top: 0; left: 0; right: 0; background: linear-gradient(135deg, #fff, #f8f9fa); border: 2px solid #e91e63; border-radius: 15px; padding: 2rem; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1); opacity: 0; transform: translateX(50px); transition: all 0.5s ease; width: 100%; box-sizing: border-box;">
-                        <div class="bras-header" style="background: #e91e63; color: white; padding: 1rem; border-radius: 10px; margin: -2rem -2rem 1.5rem -2rem; font-weight: 700; font-size: 1.5rem; text-align: center;">
+                        <div class="bras-header" style="background: #e91e63; color: white; padding: 1rem; border-radius: 10px; margin: -2rem -2rem 1.5rem -2rem; font-weight: 700; font-size: 1.5rem; text-align: center;" data-translate="bras_s_title">
                             S - Screening Mammograms
                         </div>
                         <div class="bras-content">
-                            <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: #333;">Consider having screening mammograms annually from 40.</p>
+                            <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: #333;" data-translate="bras_s_description">Consider having screening mammograms annually from 40.</p>
                             <ul class="bras-list" style="list-style: none; padding: 0;">
                                 <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Start annual mammograms at age 40</span>
+                                    <span style="font-weight: 500;" data-translate="bras_s_item1">Start annual mammograms at age 40</span>
                                 </li>
                                 <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Continue regular screening</span>
+                                    <span style="font-weight: 500;" data-translate="bras_s_item2">Continue regular screening</span>
                                 </li>
                                 <li style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Discuss timing with your doctor</span>
+                                    <span style="font-weight: 500;" data-translate="bras_s_item3">Discuss timing with your doctor</span>
                                 </li>
                             </ul>
                         </div>
@@ -223,19 +240,19 @@
             </div>
             
             <div class="step-highlight fade-in fade-in-delay-4" style="margin-top: 2rem; padding: 1.5rem; background: #f8f9fa; border-left: 4px solid #e91e63; border-radius: 8px;">
-                <h4 style="margin-top: 0; color: #e91e63;">Remember...</h4>
+                <h4 style="margin-top: 0; color: #e91e63;" data-translate="remember_title">Remember...</h4>
                 <ul style="margin-bottom: 0;">
-                    <li>Most lumps and bumps are not cancerous, but show your doctor if you notice any breast changes.</li>
-                    <li>Your risk of breast cancer increases as you get older.</li>
-                    <li>Regular mammograms from 40 can help find breast cancer early when it's more treatable.</li>
+                    <li data-translate="remember_text1">Most lumps and bumps are not cancerous, but show your doctor if you notice any breast changes.</li>
+                    <li data-translate="remember_text2">Your risk of breast cancer increases as you get older.</li>
+                    <li data-translate="remember_text3">Regular mammograms from 40 can help find breast cancer early when it's more treatable.</li>
                 </ul>
             </div>
         </section>
 
         <!-- ===== How to be Breast Aware ===== -->
         <section id="breast-aware" aria-labelledby="breast-aware-title" class="breast-aware-section fade-in">
-            <h2 id="breast-aware-title" class="fade-in fade-in-delay-1">How to be breast aware</h2>
-            <p class="lead fade-in fade-in-delay-2">Breast cancer is the most common cancer in women. Your risk increases as you get older, so every woman needs to be breast aware from the age of 20.</p>
+            <h2 id="breast-aware-title" class="fade-in fade-in-delay-1" data-translate="how_to_be_aware_title">How to be breast aware</h2>
+            <p class="lead fade-in fade-in-delay-2" data-translate="how_to_be_aware_lead">Breast cancer is the most common cancer in women. Your risk increases as you get older, so every woman needs to be breast aware from the age of 20.</p>
             <section id="awareness-image" aria-labelledby="awareness-image-title" style="margin: 2rem 0;" class="fade-in fade-in-delay-3">
                 <div class="card" style="padding:0; display:flex; justify-content:center; align-items:center;">
                     <!-- Vertical image: constrained width, no cropping -->
@@ -250,33 +267,33 @@
                 <div class="awareness-points">
                 
                     <div class="awareness-point fade-in fade-in-delay-2">
-                        <h3><i class="fa-solid fa-check-circle" style="color: #e91e63;"></i> Being breast aware can help find breast cancer earlier.</h3>
+                        <h3><i class="fa-solid fa-check-circle" style="color: #e91e63;"></i> <span data-translate="how_to_be_aware_text1">Being breast aware can help find breast cancer earlier.</span></h3>
                     </div>
                     <div class="awareness-point fade-in fade-in-delay-3">
-                        <h3><i class="fa-solid fa-check-circle" style="color: #e91e63;"></i> Mammogram recommendation generally starts from age 40.</h3>
+                        <h3><i class="fa-solid fa-check-circle" style="color: #e91e63;"></i> <span data-translate="how_to_be_aware_text2">Mammogram recommendation generally starts from age 40.</span></h3>
                 </div>
                 </div>
                 
                 <div class="life-stages-interactive" style="margin: 2rem 0;">
-                    <h3 style="text-align: center; margin-bottom: 2rem; color: #e91e63;">Life Stage Actions</h3>
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: #e91e63;" data-translate="life_stage_title">Life Stage Actions</h3>
                     
                     <!-- Age Group Buttons -->
                     <div class="age-buttons" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
                         <button class="age-btn active" data-age="20-39" style="background: white; color: #e91e63; border: 3px solid #e91e63; padding: 1.5rem 1rem; border-radius: 15px; font-weight: 700; font-size: 1.1rem; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.2);">
                             <i class="fa-solid fa-user" style="margin-right: 0.5rem;"></i>
-                            20–39 Years
+                            <span data-translate="age_20_39_title">20–39 Years</span>
                         </button>
                         <button class="age-btn" data-age="40-49" style="background: linear-gradient(135deg, #e91e63, #f06292); color: white; border: none; padding: 1.5rem 1rem; border-radius: 15px; font-weight: 700; font-size: 1.1rem; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.3);">
                             <i class="fa-solid fa-user-friends" style="margin-right: 0.5rem;"></i>
-                            40–49 Years
+                            <span data-translate="age_40_49_title">40–49 Years</span>
                         </button>
                         <button class="age-btn" data-age="50-69" style="background: linear-gradient(135deg, #e91e63, #f06292); color: white; border: none; padding: 1.5rem 1rem; border-radius: 15px; font-weight: 700; font-size: 1.1rem; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.3);">
                             <i class="fa-solid fa-users" style="margin-right: 0.5rem;"></i>
-                            50–69 Years
+                            <span data-translate="age_50_69_title">50–69 Years</span>
                         </button>
                         <button class="age-btn" data-age="70+" style="background: linear-gradient(135deg, #e91e63, #f06292); color: white; border: none; padding: 1.5rem 1rem; border-radius: 15px; font-weight: 700; font-size: 1.1rem; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.3);">
                             <i class="fa-solid fa-user-plus" style="margin-right: 0.5rem;"></i>
-                            70+ Years
+                            <span data-translate="age_70_plus_title">70+ Years</span>
                         </button>
                     </div>
                     
@@ -285,84 +302,84 @@
                         
                         <!-- 20-39 Years Card -->
                         <div class="age-card" data-age="20-39" style="display: none; background: linear-gradient(135deg, #fff, #f8f9fa); border: 2px solid #e91e63; border-radius: 15px; padding: 1.5rem; text-align: center; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1); position: absolute; top: 0; left: 0; right: 0; opacity: 0; transform: translateY(20px); transition: all 0.5s ease;">
-                            <div class="age-header" style="background: #e91e63; color: white; padding: 0.75rem; border-radius: 10px; margin: -1.5rem -1.5rem 1rem -1.5rem; font-weight: 700; font-size: 1.1rem;">
+                            <div class="age-header" style="background: #e91e63; color: white; padding: 0.75rem; border-radius: 10px; margin: -1.5rem -1.5rem 1rem -1.5rem; font-weight: 700; font-size: 1.1rem;" data-translate="age_20_39_title">
                                 20–39 Years
                             </div>
                             <div class="age-actions">
                                 <div class="action-item" style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.5rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Check your breasts</span>
+                                    <span style="font-weight: 500;" data-translate="age_20_39_item1">Check your breasts</span>
                                 </div>
                                 <div class="action-item" style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.5rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Show changes to doctor</span>
+                                    <span style="font-weight: 500;" data-translate="age_20_39_item2">Show changes to doctor</span>
                                 </div>
                                 <div class="action-item" style="display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem; background: rgba(108, 117, 125, 0.1); border-radius: 8px;">
                                     <i class="fa-solid fa-minus" style="color: #6c757d; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500; color: #6c757d;">No mammograms yet</span>
+                                    <span style="font-weight: 500; color: #6c757d;" data-translate="age_20_39_item3">No mammograms yet</span>
                                 </div>
                             </div>
                         </div>
                         
                         <!-- 40-49 Years Card -->
                         <div class="age-card" data-age="40-49" style="display: none; background: linear-gradient(135deg, #fff, #f8f9fa); border: 2px solid #e91e63; border-radius: 15px; padding: 1.5rem; text-align: center; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1); position: absolute; top: 0; left: 0; right: 0; opacity: 0; transform: translateY(20px); transition: all 0.5s ease;">
-                            <div class="age-header" style="background: #e91e63; color: white; padding: 0.75rem; border-radius: 10px; margin: -1.5rem -1.5rem 1rem -1.5rem; font-weight: 700; font-size: 1.1rem;">
+                            <div class="age-header" style="background: #e91e63; color: white; padding: 0.75rem; border-radius: 10px; margin: -1.5rem -1.5rem 1rem -1.5rem; font-weight: 700; font-size: 1.1rem;" data-translate="age_40_49_title">
                                 40–49 Years
                             </div>
                             <div class="age-actions">
                                 <div class="action-item" style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.5rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Check your breasts</span>
+                                    <span style="font-weight: 500;" data-translate="age_40_49_item1">Check your breasts</span>
                                 </div>
                                 <div class="action-item" style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.5rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Show changes to doctor</span>
+                                    <span style="font-weight: 500;" data-translate="age_40_49_item2">Show changes to doctor</span>
                                 </div>
                                 <div class="action-item" style="display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem; background: rgba(40, 167, 69, 0.1); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Annual mammograms</span>
+                                    <span style="font-weight: 500;" data-translate="age_40_49_item3">Annual mammograms</span>
                                 </div>
                             </div>
                         </div>
                         
                         <!-- 50-69 Years Card -->
                         <div class="age-card" data-age="50-69" style="display: none; background: linear-gradient(135deg, #fff, #f8f9fa); border: 2px solid #e91e63; border-radius: 15px; padding: 1.5rem; text-align: center; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1); position: absolute; top: 0; left: 0; right: 0; opacity: 0; transform: translateY(20px); transition: all 0.5s ease;">
-                            <div class="age-header" style="background: #e91e63; color: white; padding: 0.75rem; border-radius: 10px; margin: -1.5rem -1.5rem 1rem -1.5rem; font-weight: 700; font-size: 1.1rem;">
+                            <div class="age-header" style="background: #e91e63; color: white; padding: 0.75rem; border-radius: 10px; margin: -1.5rem -1.5rem 1rem -1.5rem; font-weight: 700; font-size: 1.1rem;" data-translate="age_50_69_title">
                                 50–69 Years
                             </div>
                             <div class="age-actions">
                                 <div class="action-item" style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.5rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Check your breasts</span>
+                                    <span style="font-weight: 500;" data-translate="age_50_69_item1">Check your breasts</span>
                                 </div>
                                 <div class="action-item" style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.5rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Show changes to doctor</span>
+                                    <span style="font-weight: 500;" data-translate="age_50_69_item2">Show changes to doctor</span>
                                 </div>
                                 <div class="action-item" style="display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem; background: rgba(40, 167, 69, 0.1); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Annual mammograms</span>
+                                    <span style="font-weight: 500;" data-translate="age_50_69_item3">Annual mammograms</span>
                                 </div>
                             </div>
                         </div>
                         
                         <!-- 70+ Years Card -->
                         <div class="age-card" data-age="70+" style="display: none; background: linear-gradient(135deg, #fff, #f8f9fa); border: 2px solid #e91e63; border-radius: 15px; padding: 1.5rem; text-align: center; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.1); position: absolute; top: 0; left: 0; right: 0; opacity: 0; transform: translateY(20px); transition: all 0.5s ease;">
-                            <div class="age-header" style="background: #e91e63; color: white; padding: 0.75rem; border-radius: 10px; margin: -1.5rem -1.5rem 1rem -1.5rem; font-weight: 700; font-size: 1.1rem;">
+                            <div class="age-header" style="background: #e91e63; color: white; padding: 0.75rem; border-radius: 10px; margin: -1.5rem -1.5rem 1rem -1.5rem; font-weight: 700; font-size: 1.1rem;" data-translate="age_70_plus_title">
                                 70+ Years
                             </div>
                             <div class="age-actions">
                                 <div class="action-item" style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.5rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Check your breasts</span>
+                                    <span style="font-weight: 500;" data-translate="age_70_plus_item1">Check your breasts</span>
                                 </div>
                                 <div class="action-item" style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.5rem; background: rgba(233, 30, 99, 0.05); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Show changes to doctor</span>
+                                    <span style="font-weight: 500;" data-translate="age_70_plus_item2">Show changes to doctor</span>
                                 </div>
                                 <div class="action-item" style="display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem; background: rgba(40, 167, 69, 0.1); border-radius: 8px;">
                                     <i class="fa-solid fa-check" style="color: #28a745; font-size: 1.2rem;"></i>
-                                    <span style="font-weight: 500;">Annual mammograms</span>
+                                    <span style="font-weight: 500;" data-translate="age_70_plus_item3">Annual mammograms</span>
                                 </div>
                             </div>
                         </div>
@@ -371,10 +388,10 @@
                     <div class="mammogram-note" style="background: linear-gradient(135deg, #e91e63, #f06292); color: white; padding: 1.5rem; border-radius: 12px; text-align: center; margin-top: 2rem;">
                         <h4 style="margin: 0 0 0.5rem 0; font-size: 1.1rem;">
                             <i class="fa-solid fa-info-circle" style="margin-right: 0.5rem;"></i>
-                            Mammogram Recommendation
+                            <span data-translate="mammogram_recommendation_title">توصية التصوير الشعاعي</span>
                         </h4>
-                        <p style="margin: 0; font-size: 1rem; opacity: 0.9;">
-                            Annual mammograms generally start from age 40. Discuss with your doctor about the best screening schedule for you.
+                        <p style="margin: 0; font-size: 1rem; opacity: 0.9;" data-translate="mammogram_recommendation_text">
+                            يبدأ التصوير الشعاعي السنوي عمومًا من سن 40. ناقشي مع طبيبكِ أفضل جدول للتحري يناسبكِ.
                         </p>
                     </div>
                 </div>
@@ -383,8 +400,8 @@
 
         <!-- ===== Find it before you feel it - Mammograms ===== -->
         <section id="mammogram-section" aria-labelledby="mammogram-title" class="mammogram-section fade-in">
-            <h2 id="mammogram-title" class="fade-in fade-in-delay-1">Find it before you feel it - Mammograms detect breast cancer early</h2>
-            <p class="lead fade-in fade-in-delay-2">Consider an annual screening mammogram from the age of 40</p>
+            <h2 id="mammogram-title" class="fade-in fade-in-delay-1" data-translate="mammogram_subtitle">Find it before you feel it - Mammograms detect breast cancer early</h2>
+            <p class="lead fade-in fade-in-delay-2" data-translate="mammogram_text1">Consider an annual screening mammogram from the age of 40</p>
             <section id="awareness-image" aria-labelledby="awareness-image-title" style="margin: 2rem 0;" class="fade-in fade-in-delay-3">
                 <div class="card" style="padding:0; display:flex; justify-content:center; align-items:center;">
                     <!-- Vertical image: constrained width, no cropping -->
@@ -397,11 +414,11 @@
             </section>
             <div class="mammogram-content">
                 <div class="mammogram-info fade-in fade-in-delay-1">
-                    <p>A mammogram is a safe, low-dose x-ray that can pick up very small breast cancers, long before a lump can be felt.</p>
+                    <p data-translate="mammogram_text2">A mammogram is a safe, low-dose x-ray that can pick up very small breast cancers, long before a lump can be felt.</p>
                     
                     <div class="statistics-highlight fade-in fade-in-delay-2" style="background: linear-gradient(135deg, #e91e63, #f06292); color: white; padding: 2rem; border-radius: 12px; margin: 2rem 0; text-align: center;">
-                        <h3 style="margin-top: 0; color: white;">92% Survival Rate</h3>
-                        <p style="margin-bottom: 0; font-size: 1.1rem;">Women have a 92% chance of surviving breast cancer 10 years or longer if the cancer is detected by a mammogram.</p>
+                        <h3 style="margin-top: 0; color: white;" data-translate="survival_rate_title">92% Survival Rate</h3>
+                        <p style="margin-bottom: 0; font-size: 1.1rem;" data-translate="survival_rate_text">Women have a 92% chance of surviving breast cancer 10 years or longer if the cancer is detected by a mammogram.</p>
                         </div>
                     
                  <!-- <div class="mammogram-process">
@@ -427,32 +444,32 @@
 
         <!-- ===== Checking Your Breasts Regularly ===== -->
         <section id="breast-checking" aria-labelledby="breast-checking-title" class="breast-checking-section fade-in">
-            <h2 id="breast-checking-title" class="fade-in fade-in-delay-1">Checking your breasts regularly is important</h2>
-            <p class="lead fade-in fade-in-delay-2">Follow these three simple steps to check your breasts regularly</p>
+            <h2 id="breast-checking-title" class="fade-in fade-in-delay-1" data-translate="checking_title">Checking your breasts regularly is important</h2>
+            <p class="lead fade-in fade-in-delay-2" data-translate="checking_subtitle">Follow these three simple steps to check your breasts regularly</p>
             
             <div class="checking-methods">
                 <div class="checking-method fade-in fade-in-delay-1">
                     <div class="method-icon">
                         <i class="fa-solid fa-hand-paper" style="font-size: 3rem; color: #e91e63;"></i>
                     </div>
-                    <h3>Touch</h3>
-                    <p><strong>Touch both breasts</strong> Press quite firmly using three fingers. You're feeling for any lumps or thickening in the breast, even up to the collarbone and into the armpits.</p>
+                    <h3 data-translate="touch_title">Touch</h3>
+                    <p data-translate="touch_text"><strong>Touch both breasts</strong> Press quite firmly using three fingers. You're feeling for any lumps or thickening in the breast, even up to the collarbone and into the armpits.</p>
                 </div>
                 
                 <div class="checking-method fade-in fade-in-delay-2">
                     <div class="method-icon">
                         <i class="fa-solid fa-eye" style="font-size: 3rem; color: #e91e63;"></i>
                     </div>
-                    <h3>Look</h3>
-                    <p><strong>Look in a mirror</strong> Raise your arms above your head. Does this change the appearance of your breasts or nipples?</p>
+                    <h3 data-translate="look_title">Look</h3>
+                    <p data-translate="look_text"><strong>Look in a mirror</strong> Raise your arms above your head. Does this change the appearance of your breasts or nipples?</p>
                 </div>
                 
                 <div class="checking-method fade-in fade-in-delay-3">
                     <div class="method-icon">
                         <i class="fa-solid fa-user-md" style="font-size: 3rem; color: #e91e63;"></i>
                     </div>
-                    <h3>Check</h3>
-                    <p><strong>Check with your doctor</strong> Check any breast changes with your doctor, even if you've had a mammogram recently</p>
+                    <h3 data-translate="check_title">Check</h3>
+                    <p data-translate="check_text"><strong>Check with your doctor</strong> Check any breast changes with your doctor, even if you've had a mammogram recently</p>
                 </div>
             </div>
         </section>
@@ -482,8 +499,8 @@
 
         <!-- ===== Risk Factors ===== -->
         <section id="risk-factors" aria-labelledby="risk-factors-title" class="risk-factors-section fade-in">
-            <h2 id="risk-factors-title" class="fade-in fade-in-delay-1">Risks you can't change</h2>
-            <p class="lead fade-in fade-in-delay-2">We don't know exactly what causes breast cancer, but we do know that certain risk factors can increase your chance of getting it</p>
+            <h2 id="risk-factors-title" class="fade-in fade-in-delay-1" data-translate="risks_title">Risks you can't change</h2>
+            <p class="lead fade-in fade-in-delay-2" data-translate="risks_lead">We don't know exactly what causes breast cancer, but we do know that certain risk factors can increase your chance of getting it</p>
             <section id="awareness-image" aria-labelledby="awareness-image-title" style="margin: 2rem 0;" class="fade-in fade-in-delay-3">
                 <div class="card" style="padding:0; display:flex; justify-content:center; align-items:center;">
                     <!-- Vertical image: constrained width, no cropping -->
@@ -499,59 +516,59 @@
                     <div class="risk-icon">
                         <i class="fa-solid fa-venus" style="font-size: 2.5rem; color: white;"></i>
                     </div>
-                    <h3 style="color: white;">Being a woman</h3>
-                    <p style="color: rgba(255, 255, 255, 0.9);">This is the highest risk factor for developing breast cancer.</p>
+                    <h3 style="color: white;" data-translate="risk_woman_title">Being a woman</h3>
+                    <p style="color: rgba(255, 255, 255, 0.9);" data-translate="risk_woman_text">This is the highest risk factor for developing breast cancer.</p>
                 </div>
                 
                 <div class="risk-factor fade-in fade-in-delay-2" style="background: linear-gradient(135deg, #e91e63, #f06292); color: white; border: none; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.3);">
                     <div class="risk-icon">
                         <i class="fa-solid fa-clock" style="font-size: 2.5rem; color: white;"></i>
                     </div>
-                    <h3 style="color: white;">Getting older</h3>
-                    <p style="color: rgba(255, 255, 255, 0.9);">Age is the second most important risk factor.</p>
+                    <h3 style="color: white;" data-translate="risk_age_title">Getting older</h3>
+                    <p style="color: rgba(255, 255, 255, 0.9);" data-translate="risk_age_text">Age is the second most important risk factor.</p>
                 </div>
                 
                 <div class="risk-factor fade-in fade-in-delay-3" style="background: linear-gradient(135deg, #e91e63, #f06292); color: white; border: none; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.3);">
                     <div class="risk-icon">
                         <i class="fa-solid fa-users" style="font-size: 2.5rem; color: white;"></i>
                     </div>
-                    <h3 style="color: white;">Family history</h3>
-                    <p style="color: rgba(255, 255, 255, 0.9);">Although most people with breast cancer have no family history, you may have a higher risk of developing breast cancer if your mother, sister or daughter has had breast and/or ovarian cancer.</p>
+                    <h3 style="color: white;" data-translate="risk_family_title">Family history</h3>
+                    <p style="color: rgba(255, 255, 255, 0.9);" data-translate="risk_family_text">Although most people with breast cancer have no family history, you may have a higher risk of developing breast cancer if your mother, sister or daughter has had breast and/or ovarian cancer.</p>
                 </div>
             </div>
             
             <div class="family-history-note fade-in fade-in-delay-4" style="background: #e3f2fd; border: 1px solid #bbdefb; border-radius: 8px; padding: 1.5rem; margin: 2rem 0;">
-                <h4 style="color: #1976d2; margin-top: 0;"><i class="fa-solid fa-info-circle"></i> Important</h4>
-                <p style="margin-bottom: 0; color: #1976d2;"><strong>Discuss the incidence of breast cancer in your family and talk to your doctor if a family history exists.</strong></p>
+                <h4 style="color: #1976d2; margin-top: 0;"><i class="fa-solid fa-info-circle"></i> <span data-translate="risk_important_title">Important</span></h4>
+                <p style="margin-bottom: 0; color: #1976d2;" data-translate="risk_important_text"><strong>Discuss the incidence of breast cancer in your family and talk to your doctor if a family history exists.</strong></p>
                 </div>
             </section>
           
         <!-- ===== My Breast Health Checklist ===== -->
         <section id="breast-health-checklist" aria-labelledby="breast-health-checklist-title" class="breast-health-checklist-section fade-in">
-            <h2 id="breast-health-checklist-title" class="fade-in fade-in-delay-1">My breast health checklist</h2>
-            <p class="lead fade-in fade-in-delay-2">Use this checklist to ensure you're taking care of your breast health</p>
+            <h2 id="breast-health-checklist-title" class="fade-in fade-in-delay-1" data-translate="checklist_title">My breast health checklist</h2>
+            <p class="lead fade-in fade-in-delay-2" data-translate="checklist_subtitle">Use this checklist to ensure you're taking care of your breast health</p>
             
             <div class="checklist-container fade-in fade-in-delay-3" style="background: #f8f9fa; padding: 2rem; border-radius: 12px; margin: 2rem 0;">
                 <div class="checklist-items">
                     <div class="checklist-item fade-in fade-in-delay-1">
                         <i class="fa-solid fa-check-circle" style="color: #28a745; font-size: 1.2rem;"></i>
-                        <span>I know how my breasts normally look and feel.</span>
+                        <span data-translate="checklist_item1">I know how my breasts normally look and feel.</span>
                     </div>
                     <div class="checklist-item fade-in fade-in-delay-2">
                         <i class="fa-solid fa-check-circle" style="color: #28a745; font-size: 1.2rem;"></i>
-                        <span>I check them regularly and know the signs and symptoms of breast cancer.</span>
+                        <span data-translate="checklist_item2">I check them regularly and know the signs and symptoms of breast cancer.</span>
                     </div>
                     <div class="checklist-item fade-in fade-in-delay-3">
                         <i class="fa-solid fa-check-circle" style="color: #28a745; font-size: 1.2rem;"></i>
-                        <span>I have asked about any history of breast and ovarian cancer in both sides of my family.</span>
+                        <span data-translate="checklist_item3">I have asked about any history of breast and ovarian cancer in both sides of my family.</span>
                     </div>
                     <div class="checklist-item fade-in fade-in-delay-4">
                         <i class="fa-solid fa-check-circle" style="color: #28a745; font-size: 1.2rem;"></i>
-                        <span>I will get any unusual breast changes checked by my doctor and consider starting mammograms at age 40.</span>
+                        <span data-translate="checklist_item4">I will get any unusual breast changes checked by my doctor and consider starting mammograms at age 40.</span>
                     </div>
                     <div class="checklist-item fade-in fade-in-delay-4">
                         <i class="fa-solid fa-check-circle" style="color: #28a745; font-size: 1.2rem;"></i>
-                        <span>I know the risk factors I can influence.</span>
+                        <span data-translate="checklist_item5">I know the risk factors I can influence.</span>
                     </div>
                 </div>
             </div>
@@ -561,10 +578,10 @@
         <section id="ask-question" aria-labelledby="ask-question-title" class="fade-in" style="padding: 4rem 0; background: radial-gradient(circle at center, #d81b60 0%, #e91e63 20%, #f06292 40%, #ff8fab 65%, #ffb3c6 85%, #ffc7d9 100%); position: relative; overflow: hidden;">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h2 id="ask-question-title" class="fade-in fade-in-delay-1" style="font-size: 2.5rem; font-weight: 700; color: white; margin-bottom: 1rem; text-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+                    <h2 id="ask-question-title" class="fade-in fade-in-delay-1" style="font-size: 2.5rem; font-weight: 700; color: white; margin-bottom: 1rem; text-shadow: 0 2px 8px rgba(0,0,0,0.3);" data-translate="connect_title">
                         Connect with Dr. Elie Snaifer
                     </h2>
-                    <p class="lead fade-in fade-in-delay-2" style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.9); max-width: 600px; margin: 0 auto; text-shadow: 0 1px 4px rgba(0,0,0,0.2);">
+                    <p class="lead fade-in fade-in-delay-2" style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.9); max-width: 600px; margin: 0 auto; text-shadow: 0 1px 4px rgba(0,0,0,0.2);" data-translate="connect_lead">
                         Get personalized medical advice and stay updated with the latest breast health insights
                         <br>
                     </p>
@@ -573,20 +590,20 @@
                 <div class="row fade-in fade-in-delay-3" style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
                     <!-- WhatsApp Card -->
                     <div class="contact-card fade-in fade-in-delay-1" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: 20px; padding: 2rem; box-shadow: 0 20px 40px rgba(255, 255, 255, 0.3), 0 10px 30px rgba(0,0,0,0.1); flex: 1; min-width: 300px; max-width: 350px; transition: transform 0.3s ease, box-shadow 0.3s ease; border: 1px solid rgba(255, 255, 255, 0.4);">
-                        <a href="https://wa.me/9613560797" target="_blank" rel="noopener" style="text-decoration: none; color: inherit; display: block;">
+                        <a href="https://wa.me/81495858" target="_blank" rel="noopener" style="text-decoration: none; color: inherit; display: block;">
                             <div class="card-header" style="text-align: center; margin-bottom: 1.5rem;">
                                 <div class="icon-wrapper" style="width: 80px; height: 80px; background: linear-gradient(135deg, #25D366, #128C7E); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);">
                                     <i class="fa-brands fa-whatsapp" style="font-size: 2rem; color: white;"></i>
                                 </div>
-                                <h3 style="color: #25D366; font-size: 1.5rem; font-weight: 600; margin: 0;">WhatsApp Consultation</h3>
+                                <h3 style="color: #25D366; font-size: 1.5rem; font-weight: 600; margin: 0;" data-translate="whatsapp_title">WhatsApp Consultation</h3>
                             </div>
                             <div class="card-content">
-                                <p style="color: #6c757d; line-height: 1.6; margin-bottom: 1.5rem;">
-                                    Chat directly with Dr. Elie Snaifer for immediate, personalized answers to your breast health questions
+                                <p style="color: #6c757d; line-height: 1.6; margin-bottom: 1.5rem;" data-translate="whatsapp_description">
+                                    ادردشي مباشرةً مع د. إيلي صنيفر للحصول على إجابات فورية ومخصّصة لأسئلتكِ حول صحة الثدي
                                 </p>
                                 <div class="action-button" style="background: linear-gradient(135deg, #25D366, #128C7E); color: white; padding: 0.75rem 1.5rem; border-radius: 25px; text-align: center; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 0.5rem; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);">
                                     <i class="fa-brands fa-whatsapp"></i>
-                                    Start Chat
+                                    <span data-translate="start_chat">ابدئي المحادثة</span>
                                 </div>
                             </div>
                         </a>
@@ -599,12 +616,11 @@
                                 <div class="icon-wrapper" style="width: 80px; height: 80px; background: linear-gradient(135deg, #E4405F, #C13584, #833AB4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: 0 8px 20px rgba(228, 64, 95, 0.3);">
                                     <i class="fa-brands fa-instagram" style="font-size: 2rem; color: white;"></i>
                                 </div>
-                                <h3 style="color: #E4405F; font-size: 1.5rem; font-weight: 600; margin: 0;">Follow on Instagram</h3>
+                                <h3 style="color: #E4405F; font-size: 1.5rem; font-weight: 600; margin: 0;" data-translate="instagram_title">Follow on Instagram</h3>
                             </div>
                             <div class="card-content">
-                                <p style="color: #6c757d; line-height: 1.6; margin-bottom: 1.5rem;">
-                                    Follow @dr.snaifer for daily health tips, patient success stories, and expert medical insights
-                           
+                                <p style="color: #6c757d; line-height: 1.6; margin-bottom: 1.5rem;" data-translate="instagram_description">
+                                    تابعي @dr.snaifer للحصول على نصائح صحية يومية، وقصص نجاح المرضى، ورؤى طبية خبيرة
                                 </p>
                                 <div class="action-button" style="background: linear-gradient(135deg, #E4405F, #C13584); color: white; padding: 0.75rem 1.5rem; border-radius: 25px; text-align: center; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 0.5rem; box-shadow: 0 4px 15px rgba(228, 64, 95, 0.3);">
                                     <i class="fa-brands fa-instagram"></i>
@@ -620,16 +636,16 @@
                             <div class="icon-wrapper" style="width: 80px; height: 80px; background: linear-gradient(135deg, #007bff, #0056b3); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);">
                                 <i class="fa-solid fa-comment-dots" style="font-size: 2rem; color: white;"></i>
                             </div>
-                            <h3 style="color: #007bff; font-size: 1.5rem; font-weight: 600; margin: 0;">Ask a Question</h3>
+                            <h3 style="color: #007bff; font-size: 1.5rem; font-weight: 600; margin: 0;" data-translate="ask_title">Ask a Question</h3>
                         </div>
                         <div class="card-content">
-                            <p style="color: #6c757d; line-height: 1.6; margin-bottom: 1.5rem;">
-                                Write your question and send it directly to Dr. Elie Snaifer via WhatsApp
+                            <p style="color: #6c757d; line-height: 1.6; margin-bottom: 1.5rem;" data-translate="ask_description">
+                                اكتبي سؤالكِ وأرسليه مباشرةً إلى د. إيلي صنيفر عبر واتساب
                             </p>
                             <div class="question-form">
                                 <textarea 
                                     id="questionText" 
-                                    placeholder="Type your question here..." 
+                                    placeholder="اكتبي سؤالكِ هنا..." 
                                     rows="4" 
                                     style="width: 100%; padding: 1rem; border: 2px solid #e9ecef; border-radius: 15px; font-family: inherit; resize: vertical; margin-bottom: 1rem; font-size: 0.95rem; transition: border-color 0.3s ease;"
                                     onfocus="this.style.borderColor='#007bff'; this.style.outline='none';"
@@ -642,7 +658,7 @@
                                     onmouseout="this.style.transform='translateY(0)'"
                                 >
                                     <i class="fa-brands fa-whatsapp"></i>
-                                    Send Question
+                                    <span data-translate="send_question">أرسلي السؤال</span>
                                 </button>
                             </div>
                         </div>
@@ -664,17 +680,17 @@
 
         <!-- ===== Genetic Testing & New Tools ===== -->
         <section class="card" aria-labelledby="genetics-title" style="background:linear-gradient(180deg,#fff,#fff0fa); border:1px solid #ffe4f3">
-            <h2 id="genetics-title">Genetic Testing</h2>
+            <h2 id="genetics-title" data-translate="genetic_title">Genetic Testing</h2>
             <div class="grid cols-1">
            
                 <div>
-                    <h3>MyHealthScore</h3>
-                    <p>Combine multiple genetic markers to refine risk assessment. New guidance (2025) supports PRS in clinical risk evaluation.</p>
+                    <h3 data-translate="genetic_subtitle">MyHealthScore</h3>
+                    <p data-translate="genetic_text">Combine multiple genetic markers to refine risk assessment. New guidance (2025) supports PRS in clinical risk evaluation.</p>
                 </div>
             </div>
             <div class="cta-row" style="margin-top:1rem; text-align:center;">
-                <a href="https://myhealthscore.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">Learn about Genetic Testing</a>
-                <a href="#" id="waGen" class="btn btn-wa"><i class="fa-brands fa-whatsapp"></i> Ask about Genetic Testing</a>
+                <a href="https://myhealthscore.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary" data-translate="learn_genetic_testing">Learn about Genetic Testing</a>
+                <a href="#" id="waGen" class="btn btn-wa" data-translate="ask_genetic_testing"><i class="fa-brands fa-whatsapp"></i> Ask about Genetic Testing</a>
             </div>
         </section>
 
@@ -711,11 +727,486 @@
     <script src="/assets/js/breastcancer.js"></script>
     <script src="/assets/js/animations.js"></script>
     
+    <!-- Translation System -->
+    <script>
+    // Add our custom translations to the existing translations object
+    if (typeof translations !== 'undefined') {
+        // Add our custom translations to the existing object
+        translations.en.clinic_name = "Snaifer Clinic";
+        translations.en.hero_title = "What you need to know about breast health";
+        translations.en.hero_subtitle = "A comprehensive guide to breast awareness, early detection, and preventive care";
+        translations.en.ask_doctor = "Ask Dr. Elie Snaifer";
+        translations.en.breast_health_summary = "Breast Health Summary";
+        translations.en.breast_health_basics = "The basics you need to know - To be breast aware, know your B•R•A•S.";
+        translations.en.bras_b_title = "B - Breast Aware";
+        translations.en.bras_b_description = "Be breast aware from 20 and know what's normal for you.";
+        translations.en.bras_b_item1 = "Know what is normal for your breasts";
+        translations.en.bras_b_item2 = "Check your breasts regularly for changes";
+        translations.en.bras_b_item3 = "Report changes immediately to your doctor";
+        translations.en.bras_r_title = "R - Reduce Your Risk";
+        translations.en.bras_r_description = "Reduce your risk through healthy lifestyle choices. Know your family history and talk to your doctor about hereditary breast cancer concerns.";
+        translations.en.bras_r_item1 = "Maintain a healthy lifestyle";
+        translations.en.bras_r_item2 = "Know your family history";
+        translations.en.bras_r_item3 = "Discuss hereditary concerns with your doctor";
+        translations.en.bras_a_title = "A - Act Promptly";
+        translations.en.bras_a_description = "Act on unusual breast changes, show your doctor promptly.";
+        translations.en.bras_a_item1 = "Don't wait - act on any unusual changes";
+        translations.en.bras_a_item2 = "Show your doctor any concerns immediately";
+        translations.en.bras_a_item3 = "Early detection saves lives";
+        translations.en.bras_s_title = "S - Screening Mammograms";
+        translations.en.bras_s_description = "Consider having screening mammograms annually from 40.";
+        translations.en.bras_s_item1 = "Start annual mammograms at age 40";
+        translations.en.bras_s_item2 = "Continue regular screening";
+        translations.en.bras_s_item3 = "Discuss timing with your doctor";
+        
+        // Additional comprehensive English translations
+        translations.en.remember_title = "Remember:";
+        translations.en.remember_text1 = "Most lumps and bumps are not cancerous, but show your doctor if you notice any breast changes.";
+        translations.en.remember_text2 = "Your risk of breast cancer increases as you get older.";
+        translations.en.remember_text3 = "Regular mammograms from 40 can help find breast cancer early when it's more treatable.";
+        
+        translations.en.how_to_be_aware_title = "How to be Breast Aware";
+        translations.en.how_to_be_aware_lead = "Breast cancer is the most common cancer in women. Your risk increases as you get older, so every woman needs to be breast aware from the age of 20.";
+        translations.en.how_to_be_aware_text1 = "Being breast aware can help find breast cancer earlier.";
+        translations.en.how_to_be_aware_text2 = "Mammogram recommendation generally starts from age 40.";
+        
+        translations.en.life_stage_title = "Life Stage Actions:";
+        translations.en.age_20_39_title = "20–39 Years:";
+        translations.en.age_20_39_item1 = "Check your breasts";
+        translations.en.age_20_39_item2 = "Show changes to doctor";
+        translations.en.age_20_39_item3 = "No mammograms yet";
+        translations.en.age_40_49_title = "40–49 Years:";
+        translations.en.age_40_49_item1 = "Check your breasts";
+        translations.en.age_40_49_item2 = "Show changes to doctor";
+        translations.en.age_40_49_item3 = "Annual mammograms";
+        translations.en.age_50_69_title = "50–69 Years:";
+        translations.en.age_50_69_item1 = "Check your breasts";
+        translations.en.age_50_69_item2 = "Show changes to doctor";
+        translations.en.age_50_69_item3 = "Annual mammograms";
+        translations.en.age_70_plus_title = "70+ Years:";
+        translations.en.age_70_plus_item1 = "Check your breasts";
+        translations.en.age_70_plus_item2 = "Show changes to doctor";
+        translations.en.age_70_plus_item3 = "Annual mammograms";
+        
+        translations.en.mammogram_title = "Mammogram Recommendation:";
+        translations.en.mammogram_lead = "Annual mammograms generally start from age 40. Discuss with your doctor about the best screening schedule for you.";
+        translations.en.mammogram_subtitle = "Find it before you feel it - Mammograms detect breast cancer early";
+        translations.en.mammogram_text1 = "Consider an annual screening mammogram from the age of 40";
+        translations.en.mammogram_text2 = "A mammogram is a safe, low-dose x-ray that can pick up very small breast cancers, long before a lump can be felt.";
+        translations.en.survival_rate_title = "92% Survival Rate";
+        translations.en.survival_rate_text = "Women have a 92% chance of surviving breast cancer 10 years or longer if the cancer is detected by a mammogram.";
+        
+        translations.en.checking_title = "Checking your breasts regularly is important";
+        translations.en.checking_subtitle = "Follow these three simple steps to check your breasts regularly";
+        translations.en.touch_title = "Touch";
+        translations.en.touch_text = "Touch both breasts. Press quite firmly using three fingers. You're feeling for any lumps or thickening in the breast, even up to the collarbone and into the armpits.";
+        translations.en.look_title = "Look";
+        translations.en.look_text = "Look in a mirror. Raise your arms above your head. Does this change the appearance of your breasts or nipples?";
+        translations.en.check_title = "Check";
+        translations.en.check_text = "Check with your doctor. Check any breast changes with your doctor, even if you've had a mammogram recently";
+        
+        translations.en.risks_title = "Risks you can't change";
+        translations.en.risks_lead = "We don't know exactly what causes breast cancer, but we do know that certain risk factors can increase your chance of getting it";
+        translations.en.risk_woman_title = "Being a woman";
+        translations.en.risk_woman_text = "This is the highest risk factor for developing breast cancer.";
+        translations.en.risk_age_title = "Getting older";
+        translations.en.risk_age_text = "Age is the second most important risk factor.";
+        translations.en.risk_family_title = "Family history";
+        translations.en.risk_family_text = "Although most people with breast cancer have no family history, you may have a higher risk of developing breast cancer if your mother, sister or daughter has had breast and/or ovarian cancer.";
+        translations.en.risk_important_title = "Important:";
+        translations.en.risk_important_text = "Discuss the incidence of breast cancer in your family and talk to your doctor if a family history exists.";
+        
+        translations.en.checklist_title = "My breast health checklist";
+        translations.en.checklist_subtitle = "Use this checklist to ensure you're taking care of your breast health";
+        translations.en.checklist_item1 = "I know how my breasts normally look and feel.";
+        translations.en.checklist_item2 = "I check them regularly and know the signs and symptoms of breast cancer.";
+        translations.en.checklist_item3 = "I have asked about any history of breast and ovarian cancer in both sides of my family.";
+        translations.en.checklist_item4 = "I will get any unusual breast changes checked by my doctor and consider starting mammograms at age 40.";
+        translations.en.checklist_item5 = "I know the risk factors I can influence.";
+        
+        translations.en.connect_title = "Connect with Dr. Elie Snaifer";
+        translations.en.connect_lead = "Get personalized medical advice and stay updated with the latest breast health insights";
+        translations.en.whatsapp_title = "WhatsApp Consultation";
+        translations.en.whatsapp_text = "Chat directly with Dr. Elie Snaifer for immediate, personalized answers to your breast health questions";
+        translations.en.instagram_title = "Follow on Instagram";
+        translations.en.instagram_text = "Follow @dr.snaifer for daily health tips, patient success stories, and expert medical insights";
+        translations.en.ask_title = "Ask a Question";
+        translations.en.ask_text = "Write your question and send it directly to Dr. Elie Snaifer via WhatsApp";
+        translations.en.genetic_title = "Genetic Testing";
+        translations.en.genetic_subtitle = "MyHealthScore";
+        translations.en.genetic_text = "Combine multiple genetic markers to refine risk assessment. New guidance (2025) supports PRS in clinical risk evaluation.";
+        
+        translations.en.footer_important = "Important: This page provides general educational information about breast health. It does not diagnose disease and does not replace professional medical advice. Screening timing and modality should be decided with your healthcare professional.";
+        translations.en.credits = "Images: Pink ribbon (Wikimedia Commons), Mammography illustration (NCI Public Domain).";
+        
+        translations.ar.clinic_name = "عيادة صنيفر";
+        translations.ar.hero_title = "ما تحتاجين إلى معرفته عن صحة الثدي";
+        translations.ar.hero_subtitle = "دليل شامل للتوعية بالثدي، والكشف المبكر، والرعاية الوقائية";
+        translations.ar.ask_doctor = "اسألي د. إيلي صنيفر";
+        translations.ar.breast_health_summary = "ملخّص صحة الثدي";
+        translations.ar.breast_health_basics = "الأساسيات التي تحتاجين إلى معرفتها — لتكوني على وعي بصحة الثدي، تذكّري اختصار B•R•A•S.";
+        translations.ar.bras_b_title = "B - وعي الثدي";
+        translations.ar.bras_b_description = "ابدئي الوعي بصحة الثدي من سن 20 واعرفي ما هو الطبيعي لديكِ.";
+        translations.ar.bras_b_item1 = "اعرفي ما هو الطبيعي لثدييكِ";
+        translations.ar.bras_b_item2 = "افحصي ثدييكِ بانتظام بحثًا عن أي تغيّرات";
+        translations.ar.bras_b_item3 = "أبلِغي طبيبكِ فورًا عن أي تغيّرات";
+        translations.ar.bras_r_title = "R - خفّضي مخاطرَكِ";
+        translations.ar.bras_r_description = "خفّضي المخاطر عبر خيارات نمط حياة صحي. اعرفي تاريخ عائلتكِ وتحدّثي مع طبيبكِ عن مخاوف سرطان الثدي الوراثية.";
+        translations.ar.bras_r_item1 = "حافظي على نمط حياة صحي";
+        translations.ar.bras_r_item2 = "اعرفي تاريخ عائلتكِ";
+        translations.ar.bras_r_item3 = "ناقشي المخاوف الوراثية مع طبيبكِ";
+        translations.ar.bras_a_title = "A - بادري سريعًا";
+        translations.ar.bras_a_description = "اتّخذي إجراءً تجاه أي تغيّرات غير معتادة في الثدي، وراجِعي طبيبكِ دون تأخير.";
+        translations.ar.bras_a_item1 = "لا تنتظري — بادري عند أي تغيّر غير طبيعي";
+        translations.ar.bras_a_item2 = "اعرضي على طبيبكِ أيّ مخاوف فورًا";
+        translations.ar.bras_a_item3 = "الكشف المبكر ينقذ الأرواح";
+        translations.ar.bras_s_title = "S - تصوير الثدي الشعاعي التحريّ";
+        translations.ar.bras_s_description = "فكّري في إجراء تصوير شعاعي تحرّي سنوي بدءًا من سن الأربعين.";
+        translations.ar.bras_s_item1 = "ابدئي التصوير الشعاعي سنويًا عند سن 40";
+        translations.ar.bras_s_item2 = "واصلي التحري بانتظام";
+        translations.ar.bras_s_item3 = "ناقشي التوقيت مع طبيبكِ";
+        
+        // Additional comprehensive translations
+        translations.ar.remember_title = "تذكّري:";
+        translations.ar.remember_text1 = "معظم الكتل والنتوءات ليست سرطانية، لكن راجِعي طبيبكِ إذا لاحظتِ أي تغيّرات في الثدي.";
+        translations.ar.remember_text2 = "يزداد خطر الإصابة بسرطان الثدي مع التقدّم في العمر.";
+        translations.ar.remember_text3 = "تساعد الفحوصات الشعاعية المنتظمة بدءًا من سن 40 على اكتشاف سرطان الثدي مبكرًا عندما يكون أكثر قابلية للعلاج.";
+        
+        translations.ar.how_to_be_aware_title = "كيف تكونين على وعي بصحة الثدي";
+        translations.ar.how_to_be_aware_lead = "سرطان الثدي هو السرطان الأكثر شيوعًا لدى النساء. يزداد خطر الإصابة مع التقدّم في العمر، لذا ينبغي لكل امرأة أن تكون واعية بصحة الثدي منذ سن 20.";
+        translations.ar.how_to_be_aware_text1 = "يساعد الوعي بالثدي على اكتشاف سرطان الثدي في وقت أبكر.";
+        translations.ar.how_to_be_aware_text2 = "تبدأ التوصية العامة بالتصوير الشعاعي للثدي عادةً من سن 40.";
+        
+        translations.ar.life_stage_title = "إجراءات حسب المرحلة العمرية:";
+        translations.ar.age_20_39_title = "20–39 سنة:";
+        translations.ar.age_20_39_item1 = "افحصي ثدييكِ";
+        translations.ar.age_20_39_item2 = "اعرضي أي تغيّرات على الطبيب";
+        translations.ar.age_20_39_item3 = "لا توصية بالتصوير الشعاعي بعد";
+        translations.ar.age_40_49_title = "40–49 سنة:";
+        translations.ar.age_40_49_item1 = "افحصي ثدييكِ";
+        translations.ar.age_40_49_item2 = "اعرضي أي تغيّرات على الطبيب";
+        translations.ar.age_40_49_item3 = "تصوير شعاعي سنوي";
+        translations.ar.age_50_69_title = "50–69 سنة:";
+        translations.ar.age_50_69_item1 = "افحصي ثدييكِ";
+        translations.ar.age_50_69_item2 = "اعرضي أي تغيّرات على الطبيب";
+        translations.ar.age_50_69_item3 = "تصوير شعاعي سنوي";
+        translations.ar.age_70_plus_title = "70 سنة فأكثر:";
+        translations.ar.age_70_plus_item1 = "افحصي ثدييكِ";
+        translations.ar.age_70_plus_item2 = "اعرضي أي تغيّرات على الطبيب";
+        translations.ar.age_70_plus_item3 = "تصوير شعاعي سنوي";
+        
+        translations.ar.mammogram_title = "توصية تصوير الثدي الشعاعي:";
+        translations.ar.mammogram_lead = "يبدأ التصوير الشعاعي السنوي عمومًا من سن 40. ناقشي مع طبيبكِ أفضل جدول للتحري يناسبكِ.";
+        translations.ar.mammogram_subtitle = "اكتشفيه قبل أن تشعري به — يكتشف التصوير الشعاعي سرطان الثدي مبكرًا";
+        translations.ar.mammogram_text1 = "فكّري في تصوير شعاعي تحرّي سنوي ابتداءً من سن 40";
+        translations.ar.mammogram_text2 = "تصوير الثدي الشعاعي فحص آمن بجرعة منخفضة يمكنه اكتشاف سرطانات صغيرة جدًا قبل فترة طويلة من إمكانية تحسّس كتلة.";
+        translations.ar.survival_rate_title = "معدّل بقاء 92٪";
+        translations.ar.survival_rate_text = "لدى النساء فرصة 92٪ للبقاء على قيد الحياة لمدة 10 سنوات أو أكثر إذا كُشف السرطان عبر التصوير الشعاعي.";
+        
+        translations.ar.checking_title = "فحص الثديين بانتظام أمر مهم";
+        translations.ar.checking_subtitle = "اتبعي هذه الخطوات الثلاث البسيطة لفحص ثدييكِ بانتظام";
+        translations.ar.touch_title = "اللمس";
+        translations.ar.touch_text = "المسي كلا الثديين. اضغطي بثبات باستخدام ثلاثة أصابع. ابحثي عن أي كتل أو سماكة في الثدي، حتى عند الترقوة وداخل الإبطين.";
+        translations.ar.look_title = "النظر";
+        translations.ar.look_text = "انظري في المرآة. ارفعي ذراعيكِ فوق رأسكِ. هل يغيّر ذلك مظهر الثديين أو الحلمتين؟";
+        translations.ar.check_title = "المراجعة";
+        translations.ar.check_text = "راجِعي طبيبكِ. افحصي أي تغيّرات في الثدي مع طبيبكِ حتى لو أجريتِ تصويرًا شعاعيًا حديثًا.";
+        
+        translations.ar.risks_title = "مخاطر لا يمكنك تغييرها";
+        translations.ar.risks_lead = "لا نعرف بالضبط سبب سرطان الثدي، لكننا نعلم أن بعض عوامل الخطر قد تزيد احتمال الإصابة به.";
+        translations.ar.risk_woman_title = "كونكِ امرأة";
+        translations.ar.risk_woman_text = "هذا أكبر عامل خطر للإصابة بسرطان الثدي.";
+        translations.ar.risk_age_title = "التقدّم في العمر";
+        translations.ar.risk_age_text = "العمر هو ثاني أهم عامل خطر.";
+        translations.ar.risk_family_title = "التاريخ العائلي";
+        translations.ar.risk_family_text = "على الرغم من أن معظم المصابات بسرطان الثدي لا يملكن تاريخًا عائليًا، قد يكون خطرُكِ أعلى إذا كانت والدتكِ أو أختكِ أو ابنتكِ قد أصيبت بسرطان الثدي و/أو المبيض.";
+        translations.ar.risk_important_title = "مهم:";
+        translations.ar.risk_important_text = "ناقشي وجود حالات سرطان الثدي في عائلتكِ وتحدّثي إلى طبيبكِ إذا وُجد تاريخ عائلي.";
+        
+        translations.ar.checklist_title = "قائمة التحقق لصحة الثدي لديّ";
+        translations.ar.checklist_subtitle = "استخدمي هذه القائمة للتأكد من الاعتناء بصحة ثدييكِ";
+        translations.ar.checklist_item1 = "أعرف كيف يبدو شكل ثديَيَّ عادةً وكيف أحسّ بهما.";
+        translations.ar.checklist_item2 = "أفحصهما بانتظام وأعرف علامات وأعراض سرطان الثدي.";
+        translations.ar.checklist_item3 = "استعلمتُ عن أي تاريخ لسرطان الثدي والمبيض لدى كلا طرفَي العائلة.";
+        translations.ar.checklist_item4 = "سأفحص لدى طبيبي أي تغيّرات غير معتادة وسأفكّر بالبدء بالتصوير الشعاعي عند سن 40.";
+        translations.ar.checklist_item5 = "أعرف عوامل الخطر التي أستطيع التأثير عليها.";
+        
+        translations.ar.connect_title = "تواصَلي مع د. إيلي صنيفر";
+        translations.ar.connect_lead = "احصلي على نصائح طبية مخصّصة وابقي على اطّلاع بأحدث المستجدات حول صحة الثدي";
+        translations.ar.whatsapp_title = "استشارة عبر واتساب";
+        translations.ar.whatsapp_text = "ادردشي مباشرةً مع د. إيلي صنيفر للحصول على إجابات فورية ومخصّصة لأسئلتكِ حول صحة الثدي";
+        translations.ar.instagram_title = "تابعي على إنستغرام";
+        translations.ar.instagram_text = "تابعي ‎@dr.snaifer للحصول على نصائح صحية يومية، وقصص نجاح المرضى، ورؤى طبية خبيرة";
+        translations.ar.ask_title = "اطرحي سؤالًا";
+        translations.ar.ask_text = "اكتبي سؤالكِ وأرسليه مباشرةً إلى د. إيلي صنيفر عبر واتساب";
+        translations.ar.genetic_title = "الفحوصات الجينية";
+        translations.ar.genetic_subtitle = "MyHealthScore (تقييمي الصحي)";
+        translations.ar.genetic_text = "يُمكن دمج مؤشّرات جينية متعددة لتحسين تقدير المخاطر. تُدعَم التوجيهات الجديدة (2025) استخدام الدرجة متعددة الجينات (PRS) ضمن التقييم السريري للمخاطر.";
+        
+        translations.ar.footer_important = "مهم: توفّر هذه الصفحة معلومات تثقيفية عامة عن صحة الثدي. لا تُشخّص الأمراض ولا تُغني عن الاستشارة الطبية المتخصّصة. يجب تحديد توقيت وطريقة التحري بالتشاور مع مقدّم الرعاية الصحية.";
+        translations.ar.credits = "الصور: الشريط الوردي (ويكيميديا كومنز)، رسم توضيحي للتصوير الشعاعي للثدي (المعهد الوطني للسرطان — الملكية العامة).";
+        
+        // Additional translations for contact cards
+        translations.ar.mammogram_recommendation_title = "توصية التصوير الشعاعي";
+        translations.ar.mammogram_recommendation_text = "يبدأ التصوير الشعاعي السنوي عمومًا من سن 40. ناقشي مع طبيبكِ أفضل جدول للتحري يناسبكِ.";
+        translations.ar.whatsapp_description = "ادردشي مباشرةً مع د. إيلي صنيفر للحصول على إجابات فورية ومخصّصة لأسئلتكِ حول صحة الثدي";
+        translations.ar.start_chat = "ابدئي المحادثة";
+        translations.ar.instagram_description = "تابعي @dr.snaifer للحصول على نصائح صحية يومية، وقصص نجاح المرضى، ورؤى طبية خبيرة";
+        translations.ar.ask_description = "اكتبي سؤالكِ وأرسليه مباشرةً إلى د. إيلي صنيفر عبر واتساب";
+        translations.ar.send_question = "أرسلي السؤال";
+        translations.ar.breast_health_badge = "صحة الثدي";
+        translations.ar.learn_genetic_testing = "تعرفي على الفحص الجيني";
+        translations.ar.ask_genetic_testing = "اسألي عن الفحص الجيني";
+    }
+    
+    // Use the existing changeLanguage function from translations.js
+    function switchLanguage(lang) {
+        // Use the existing changeLanguage function from translations.js
+        if (typeof changeLanguage === 'function') {
+            changeLanguage(lang);
+        }
+    }
+    
+    // Initialize language on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        // Check for saved language preference
+        const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+        switchLanguage(savedLang);
+        
+        // Language selector functionality
+        const languageSelector = document.querySelector('.language-selector');
+        const languageBtn = document.getElementById('languageBtn');
+        const languageDropdown = document.getElementById('languageDropdown');
+        const languageOptions = document.querySelectorAll('.dropdown-option');
+        
+        console.log('Language selector elements:', {
+            languageSelector,
+            languageBtn,
+            languageDropdown,
+            languageOptions: languageOptions.length
+        });
+        
+        // Toggle dropdown
+        if (languageBtn) {
+            languageBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                console.log('Language button clicked!');
+                
+                // Toggle active class
+                languageSelector.classList.toggle('active');
+                
+                if (languageSelector.classList.contains('active')) {
+                    languageDropdown.style.opacity = '1';
+                    languageDropdown.style.visibility = 'visible';
+                    languageDropdown.style.transform = 'translateY(0)';
+                    console.log('Showing dropdown');
+                } else {
+                    languageDropdown.style.opacity = '0';
+                    languageDropdown.style.visibility = 'hidden';
+                    languageDropdown.style.transform = 'translateY(-10px)';
+                    console.log('Hiding dropdown');
+                }
+            });
+        }
+        
+        // Handle language option clicks
+        languageOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                const lang = this.getAttribute('data-lang');
+                console.log('Language option clicked:', lang);
+                
+                // Use the existing changeLanguage function from translations.js
+                if (typeof changeLanguage === 'function') {
+                    changeLanguage(lang);
+                } else {
+                    switchLanguage(lang);
+                }
+                
+                // Close dropdown
+                languageSelector.classList.remove('active');
+                languageDropdown.style.opacity = '0';
+                languageDropdown.style.visibility = 'hidden';
+                languageDropdown.style.transform = 'translateY(-10px)';
+            });
+            
+            // Hover effects
+            option.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = '#f8f9fa';
+            });
+            option.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = 'transparent';
+            });
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!languageSelector.contains(e.target)) {
+                languageSelector.classList.remove('active');
+                languageDropdown.style.opacity = '0';
+                languageDropdown.style.visibility = 'hidden';
+                languageDropdown.style.transform = 'translateY(-10px)';
+            }
+        });
+        
+        // Hover effect for language button
+        languageBtn.addEventListener('mouseenter', function() {
+            this.style.background = '#e91e63';
+            this.style.color = '#fff';
+            this.style.transform = 'scale(1.05)';
+            this.style.boxShadow = '0 0 15px rgba(233, 30, 99, 0.3)';
+        });
+        
+        languageBtn.addEventListener('mouseleave', function() {
+            this.style.background = 'transparent';
+            this.style.color = '#e91e63';
+            this.style.transform = 'scale(1)';
+            this.style.boxShadow = 'none';
+        });
+    });
+    </script>
+    
     <style>
         /* ===== GLOBAL FONT SETTINGS ===== */
         * {
             font-family: 'Quicksand', sans-serif !important;
             font-weight: 300 !important;
+        }
+        
+        /* ===== RTL SUPPORT ===== */
+        [dir="rtl"] {
+            text-align: right;
+        }
+        
+        [dir="rtl"] .language-selector {
+            right: auto !important;
+            left: 2rem !important;
+        }
+        
+        [dir="rtl"] .language-dropdown {
+            right: auto !important;
+            left: 0 !important;
+        }
+        
+        [dir="rtl"] .new-hero-content {
+            direction: rtl;
+        }
+        
+        [dir="rtl"] .bras-interactive-container {
+            direction: rtl;
+        }
+        
+        [dir="rtl"] .bras-buttons-column {
+            flex-direction: row-reverse !important;
+        }
+        
+        [dir="rtl"] .bras-cards-container {
+            direction: rtl;
+        }
+        
+        [dir="rtl"] .checking-methods {
+            direction: rtl;
+        }
+        
+        [dir="rtl"] .risk-factors-grid {
+            direction: rtl;
+        }
+        
+        [dir="rtl"] .checklist-items {
+            direction: rtl;
+        }
+        
+        [dir="rtl"] .contact-card {
+            direction: rtl;
+        }
+        
+        [dir="rtl"] .age-buttons {
+            direction: rtl;
+        }
+        
+        [dir="rtl"] .age-cards-container {
+            direction: rtl;
+        }
+        
+        /* Language Selector Override Styles */
+        .language-selector .selected-text {
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            padding: 0.5rem !important;
+            font-size: 1.2rem !important;
+            color: #e91e63 !important;
+            background: transparent !important;
+            border: 2px solid #e91e63 !important;
+            border-radius: 50% !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+            min-width: auto !important;
+            text-align: center !important;
+        }
+        
+        .language-selector .selected-text:hover {
+            background: #e91e63 !important;
+            color: #fff !important;
+            border-color: #e91e63 !important;
+            transform: scale(1.05) !important;
+            box-shadow: 0 0 15px rgba(233, 30, 99, 0.3) !important;
+        }
+        
+        .language-selector .dropdown {
+            position: absolute !important;
+            top: 100% !important;
+            right: 0 !important;
+            background: #fff !important;
+            border: 1px solid #e9ecef !important;
+            border-radius: 8px !important;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+            min-width: 100px !important;
+            z-index: 1000 !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+            transform: translateY(-10px) !important;
+            transition: all 0.3s ease !important;
+            margin-top: 0.5rem !important;
+        }
+        
+        .language-selector.active .dropdown {
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: translateY(0) !important;
+        }
+        
+        .language-selector .dropdown-option {
+            display: flex !important;
+            align-items: center !important;
+            padding: 0.5rem 0.75rem !important;
+            cursor: pointer !important;
+            transition: background-color 0.2s ease !important;
+            border-bottom: 1px solid #eee !important;
+            color: #000 !important;
+            text-decoration: none !important;
+        }
+        
+        .language-selector .dropdown-option:hover {
+            background: #f8f9fa !important;
+            color: #333 !important;
+        }
+        
+        .language-selector .dropdown-option:last-child {
+            border-bottom: none !important;
+        }
+        
+        .language-selector .lang-code {
+            font-weight: 600 !important;
+            font-size: 0.9rem !important;
+            color: #e91e63 !important;
+            min-width: 20px !important;
+            margin-right: 0.5rem !important;
+        }
+        
+        .language-selector .lang-name {
+            font-size: 0.9rem !important;
+            color: #333 !important;
         }
         
         /* Fix for Font Awesome icons */
@@ -1445,7 +1936,7 @@
                     // Encode the full message for URL
                     const encodedMessage = encodeURIComponent(fullMessage);
                     // Create WhatsApp URL with the pre-filled message
-                    const whatsappUrl = `https://wa.me/9613560797?text=${encodedMessage}`;
+                    const whatsappUrl = `https://wa.me/81495858?text=${encodedMessage}`;
                     // Open WhatsApp
                     window.open(whatsappUrl, '_blank');
                     // Clear the textarea
