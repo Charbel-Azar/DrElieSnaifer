@@ -268,7 +268,20 @@ const translations = {
         "share_via_whatsapp": "Share via WhatsApp",
         "footer_important": "Important: This page provides general educational information for Breast Cancer Awareness Month. It does not diagnose disease and does not replace professional medical advice. Screening timing and modality should be decided with your healthcare professional.",
         "privacy": "Privacy",
-        "credits": "Images: Pink ribbon (Wikimedia Commons), Mammography illustration (NCI Public Domain)."
+        "credits": "Images: Pink ribbon (Wikimedia Commons), Mammography illustration (NCI Public Domain).",
+        "mammogram_recommendation_title": "Mammogram Recommendation",
+        "mammogram_recommendation_text": "Annual mammography screening generally begins at age 40. Discuss with your doctor the best screening schedule that suits you.",
+        "breast_health_badge": "Breast Health",
+        "connect_title": "Connect with Dr. Elie Snaifer",
+        "connect_lead": "Get personalized medical advice and stay updated with the latest breast health insights",
+        "whatsapp_title": "WhatsApp Consultation",
+        "whatsapp_description": "Chat directly with Dr. Elie Snaifer for instant, personalized answers to your breast health questions",
+        "start_chat": "Start Chat",
+        "instagram_title": "Follow on Instagram",
+        "instagram_description": "Follow @dr.snaifer for daily health tips, patient success stories, and expert medical insights",
+        "ask_title": "Ask a Question",
+        "ask_description": "Write your question and send it directly to Dr. Elie Snaifer via WhatsApp",
+        "send_question": "Send Question"
     },
     
     ar: {

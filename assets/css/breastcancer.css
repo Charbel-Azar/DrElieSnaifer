@@ -160,7 +160,7 @@ a{
 
 /* ====== New Hero Section ====== */
 .new-hero {
-    background: radial-gradient(circle at center, #c41271 0%, #ad1457 8%, #c2185b 15%, #d81b60 25%, #e91e63 40%, #f06292 60%, #ff8fab 85%, #ffb3c6 100%) !important;
+    background: radial-gradient(circle at center, #d81b60 0%, #d81b60  8%, #d81b60 15%, #d81b60 25%, #e91e63 40%, #f06292 60%, #ff8fab 85%, #ffb3c6 100%) !important;
     padding: 4rem 1rem !important;
     margin: 0 !important;
     border-radius: 0 !important;
