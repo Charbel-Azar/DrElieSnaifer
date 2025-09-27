@@ -281,7 +281,8 @@ const translations = {
         "instagram_description": "Follow @dr.snaifer for daily health tips, patient success stories, and expert medical insights",
         "ask_title": "Ask a Question",
         "ask_description": "Write your question and send it directly to Dr. Elie Snaifer via WhatsApp",
-        "send_question": "Send Question"
+        "send_question": "Send Question",
+        "learn_genetic_testing": "Learn About Genetic Testing"
     },
     
     ar: {
