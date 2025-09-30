@@ -6,7 +6,7 @@
     
     // Google Analytics Configuration
     const GA_TRACKING_ID = 'G-H2LEQ4605J';
-
+    const GA_TRACKING_ID2 = 'G-65N4YJV08W';
     // Meta Pixel Configuration  
     const FB_PIXEL_ID = '1262147982127732';
     
@@ -24,6 +24,7 @@
         window.gtag = gtag;
         gtag('js', new Date());
         gtag('config', GA_TRACKING_ID);
+        gtag('config', GA_TRACKING_ID2);
     }
     
     // Load Meta Pixel
