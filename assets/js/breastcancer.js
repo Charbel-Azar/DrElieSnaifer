@@ -53,6 +53,15 @@ if(waGenEl){
     });
 }
 
+// Fertility preservation WhatsApp button (special case)
+var waFertilityEl = document.getElementById('waFertility');
+if(waFertilityEl){
+    waFertilityEl.addEventListener('click', function(e){
+        e.preventDefault();
+        openWhatsApp(CLINIC_PHONE, 'Hi, I am interested in learning more about fertility preservation options.');
+    });
+}
+
 // Share functionality
 (function(){
     var shareBtn = document.getElementById('floatShare');
